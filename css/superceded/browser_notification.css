@@ -1,0 +1,98 @@
+/* BEGIN LEGACY BROWSER NOTIFICATION STYLE */
+#legacy_browser_notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+#legacy_browser_notification .container {
+  margin: 0 auto;
+  background: url('../images/browser_notification/notifier_sprite.png') 0px -309px repeat-x;
+  border-left: 5px solid #555;
+  border-top: 5px solid #555;
+  border-right: 5px solid #555;
+  border-bottom: 0px;
+  padding: 20px;
+  width: 910px;
+}
+#legacy_browser_notification .container p {
+  margin: 0px;
+  padding: 0px;
+}
+#legacy_browser_notification .container #left_notify #browser_notification_alert {
+  display: block;
+  width: 49px;
+  height: 59px;
+  background: url('../images/browser_notification/notifier_sprite.png') 0px 0px no-repeat;
+  position: relative;
+  left: 30px;
+  top: 5px;
+}
+#legacy_browser_notification .container #center_notify {
+  position: relative;
+  top: 5px;
+}
+#legacy_browser_notification .container #center_notify #legacy_message, #legacy_browser_notification .container #center_notify #compat_message {
+  display: none;
+}
+#legacy_browser_notification .container #center_notify #legacy_message a, #legacy_browser_notification .container #center_notify #compat_message a {
+  text-decoration: none;
+  display: block;
+  color: #333333;
+}
+#legacy_browser_notification .container #center_notify #legacy_message a:hover, #legacy_browser_notification .container #center_notify #compat_message a:hover {
+  background: #eeeeee;
+  color: #333333;
+}
+#legacy_browser_notification .container #center_notify #legacy_message #modern_browsers, #legacy_browser_notification .container #center_notify #compat_message #modern_browsers {
+  left: 95px;
+  position: relative;
+  margin-top: 10px;
+}
+#legacy_browser_notification .container #center_notify #legacy_message #modern_browsers a, #legacy_browser_notification .container #center_notify #compat_message #modern_browsers a {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+#legacy_browser_notification .container #center_notify #legacy_message #modern_browsers a img, #legacy_browser_notification .container #center_notify #compat_message #modern_browsers a img {
+  cursor: pointer;
+}
+#legacy_browser_notification .container #center_notify #compat_message a {
+  display: inline;
+  text-decoration: underline;
+  background-color: transparent;
+}
+#legacy_browser_notification .container #window_buttons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 65px;
+}
+#legacy_browser_notification .container #window_buttons .question_button {
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 28px;
+  margin: 10px 1px;
+  cursor: pointer;
+  background: url('../images/browser_notification/notifier_sprite.png') 0px -61px no-repeat;
+}
+#legacy_browser_notification .container #window_buttons .close_button {
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 28px;
+  margin: 10px 1px;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  background: url('../images/browser_notification/notifier_sprite.png') 0px -90px no-repeat;
+}
+/* IE8 conditional styling */
+.ie7 #legacy_browser_notification .container, .ie8 #legacy_browser_notification .container {
+  position: relative;
+  top: 5px;
+}
+/* END LEGACY BROWSER NOTIFICATION STYLE */

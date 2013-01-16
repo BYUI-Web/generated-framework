@@ -1,0 +1,8 @@
+.ccell {
+  display: inline-block;
+  border: #555 1px solid;
+  padding: 1em;
+}
+.cname {
+  width: 150px;
+}

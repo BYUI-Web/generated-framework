@@ -1,0 +1,10 @@
+/*to be added to main.less*/
+
+#all_contacts_link {
+	float: right;
+	margin: 0 0 10px 0;
+}
+#all_contacts_link a {
+	color: #666;
+	font-size: 10px;
+}

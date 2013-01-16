@@ -1,0 +1,56 @@
+#cycle_gallery {
+  position: relative;
+  display: block;
+}
+#cycle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #999;
+}
+#cycle_control {
+  position: absolute;
+  left: 2px;
+  height: 37px;
+  z-index: 99999;
+}
+#cycle_prev {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 10px;
+  display: none;
+  background: url("../images/interface/cycle/prev-next_button_80x40.png") no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+}
+#cycle_next {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  display: none;
+  background: url("../images/interface/cycle/prev-next_button_80x40.png") no-repeat;
+  background-position: -40px 0px;
+  cursor: pointer;
+}
+div#cycle_nav {
+  min-height: 20px;
+  margin-bottom: 2px;
+}
+#cycle_nav a {
+  background: url("../images/interface/cycle/page_bullets_32x16.png") no-repeat;
+  background-position: -16px 0px;
+  display: block;
+  float: left;
+  height: 14px;
+  width: 14px;
+  margin: 4px;
+  padding: 0;
+  text-indent: -9999px;
+}
+#cycle_nav a.activeSlide {
+  background: url("../images/interface/cycle/page_bullets_32x16.png") no-repeat;
+  background-position: 0px 0px;
+}
+#cycle_nav a:focus {
+  outline: none;
+}

@@ -1,0 +1,557 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"  > <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>Brigham Young University - Idaho</title>
+    <meta name="description" content="Brigham Young University - Idaho">
+    <meta name="author" content="Brigham Young University - Idaho">
+
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- favicon section for all device types -->
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="icon" href="favicon.ico" />
+    
+    <!-- Blueprint and Regressive/Progressive Adaptive scripts for older/cross-browser compliance -->
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"> 
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
+
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection">
+    <style>
+        .checklist .linkbox * {
+            cursor:pointer;
+        }
+        .checklist .link_area div{
+            display:block;
+            width:210px;
+            float:left;
+            margin-left:20px;
+            font: 13.5px/140% Helvetica;
+        }
+        .checklist .link_area a{
+            font-size: 12px;
+            padding: 14px 0;
+            position: relative;
+            display: block;
+            margin-left: 7px;
+            float: left;
+        }
+        .checklist #popover_content div {
+            display:none;
+            width:570px;
+            background-color:#326BA9;
+            height:auto;
+            color:white;
+            padding:20px;
+            float:right;
+            box-shadow: -10px 5px 20px rgba(0,0,0,0.2);
+            border-radius: 10px 10px 10px 0;
+        }
+        .checklist #popover_content div h1{
+            color:white;
+        }
+        .checklist #local_nav a.popover_link {
+            cursor:pointer;
+            text-decoration: none;
+        }
+        .checklist span.popover_indicator {
+            display:block;
+            position:absolute;
+            background-color:#C8C8C8;
+            width: 30px;
+            height: 103px;
+            left: -10px;
+            top: 0;
+        }
+        .checklist span.popover_close {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 18px;
+            font-weight: bold;
+            font-size: 23px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            cursor:pointer;
+        }
+
+    </style>
+    <!-- Modernizr script, for js and feature detection -->
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    
+</head>
+
+<body id="GeneralAudiencePage" class="checklist"><!-- Body tag must have page XML root tag template name in it to inherit template-specific css rules -->
+
+    <div class="global_outside top_header">
+        <div id="top_header" class="container">
+            <nav id="main_nav" class="span-17">
+                <ul>
+                    <li class="first"><a href="http://www.byui.edu/">Home</a></li>
+                    <li><a href="http://www.byui.edu/about/">About BYUI</a></li>
+                    <li><a href="http://www.byui.edu/about/academics/">Academics</a></li>
+                    <li><a href="http://www.byui.edu/about/student-life/">Student Life</a></li>
+                    <li class="last"><a href="http://www.byui.edu/contact-us/">Contact BYUI</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div><!-- end global_outside top -->
+
+    <header class="global_outside main_header">
+        <div id="main_header" class="container">
+            <div class="span-2">
+                <a href="http://www.byui.edu"><img src="images/head/byuilogo.png" alt="Brigham Young University Logo" height="41" width="70" /></a>
+            </div>
+            <div class="span-9">
+                <h1 id="university_name"><a href="http://www.byui.edu/">Brigham Young University - Idaho</a></h1>
+            </div>
+            <nav id="audience_nav_box" class="span-13 last">
+                <ul>
+                    <li class="first"><a href="http://www.byui.edu/students/">Students</a></li>
+                    <li><a href="http://www.byui.edu/future-students/">Future Students</a></li>
+                    <li><a href="http://www.byui.edu/parents/">Parents</a></li>
+                    <li><a href="http://www.byui.edu/employees/">Employees</a></li>
+                    <li><a href="http://www.byui.edu/alumni/">Alumni</a></li>
+                    <li class="last"><a href="http://www.byui.edu/visitors/">Visitors</a></li>  
+                </ul>
+            </nav>
+            <div id="search_box" class="span-7 last">
+                <nav>
+                    <ul>
+                        <li class="first"><a href="http://www.byui.edu/directories/">Directories</a></li>
+                        <li><a href="http://www.byui.edu/ask/live-chat/" target="_blank"><span class="italics">Ask</span> <strong>BYUI</strong></a></li>
+                        <li><a href="http://m.byui.edu/">Mobile Tools</a></li>
+                        <li class="last"><a href="https://my.byui.edu/"><span class="italics">my</span><strong>BYUI</strong></a></li>
+                    </ul>
+                </nav>
+                <div id="search_wrapper">
+                    <form method="get" action="http://search.byui.edu/search?">
+                        <input type="text" class="search_box" name="q" alt="Search the BYU-I website"/>
+                        <input type="image" src="images/head/blankimg.png" class="search_box_submit" alt="Submit Search"/>
+                        <input type="hidden" name="site" value="default_collection"/>
+                        <input type="hidden" name="client" value="beta_frontend"/>
+                        <input type="hidden" name="output" value="xml_no_dtd"/>
+                        <input type="hidden" name="proxystylesheet" value="beta_frontend"/>
+                        <input type="hidden" name="proxyreload" value="0"/>
+                    </form>
+                </div>
+            </div><!-- end search_box -->
+
+        </div><!-- end main_header container -->
+    </header><!-- end global_outside main_header -->
+
+    <div class="global_outside main_content">   
+        <section id="main_content" class="container">
+
+      <!-- BEGIN CONTENT AREA -->
+        <!-- BEGIN LOCAL_NAV -->
+    <nav id="local_nav" class="span-8">
+            
+            <div id="login">
+              <a href="" id="login_title">
+                Login
+              </a>
+              <span id="login_my">
+                <a href="https://web.byui.edu/services/login?RedirectURL=https://my.byui.edu" title="Login to MyBYU-I">MY.BYUI <span class="smaller">&gt;&gt;</span></a>
+              </span>
+              <span id="login_mail">
+                <a href="https://ch1prd0104.outlook.com/owa/"title="Login to BYU-I Email">EMAIL <span class="smaller">&gt;&gt;</span></a>
+              </span>
+              <span id="login_ilearn">
+                <a href="http://www.byui.edu/ilearn" title="Login to I-Learn">ILEARN <span class="smaller">&gt;&gt;</span></a>
+              </span>
+            </div>
+            
+            <div class="link_box">
+                <div class="box_header">1: Get prepared for BYU-Idaho</div>
+                <div class="link_area">
+                    <div>
+                        Know all about BYU-Idaho before you come
+                    </div>
+                    <a id="link_1" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+            <div class="link_box">
+                <div class="box_header">2: Communicating at BYU-Idaho</div>
+                <div class="link_area">
+                    <div>
+                        Contact us and let us know if you are coming
+                    </div>
+                    <a id="link_2" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+            <div class="link_box">
+                <div class="box_header">3: Paying for College </div>
+                <div class="link_area">
+                    <div>
+                        Suggestions and things to consider financially
+                    </div>
+                    <a id="link_3" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+            <div class="link_box">
+                <div class="box_header">4: Living in Rexburg</div>
+                <div class="link_area">
+                    <div>
+                        What to do and where to go in Rexburg
+                    </div>
+                    <a id="link_4" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+            <div class="link_box">
+                <div class="box_header">5: Academic Resources</div>
+                <div class="link_area">
+                    <div>
+                        There are many resources available for you
+                    </div>
+                    <a id="link_5" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+            <div class="link_box">
+                <div class="box_header">6: Campus Services</div>
+                <div class="link_area">
+                    <div>
+                        We can help. Learn how.
+                    </div>
+                    <a id="link_6" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+            <div class="link_box">
+                <div class="box_header">7: Campus Life/Involvement</div>
+                <div class="link_area">
+                    <div>
+                        Get involved. Campus life can be very fun!
+                    </div>
+                    <a id="link_7" class="popover_link">more &#187;</a>
+                    <span class="clearall"></span>
+                </div>
+            </div>
+
+
+
+            <!-- <span class="clearall"></span> -->
+
+        </nav><!-- END LOCAL_NAV -->
+        
+        <section id="content_region">
+
+        <!-- BEGIN MAIN_CONTENT  -->
+            <section id="main_content" class="span-16 last"><!-- IF NO CONTENT IN RIGHT ASIDE, SPAN-18 LAST -->
+                <div id="popover_content">
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>1Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>2Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>3Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>4Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>5Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>6Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                    <div>
+                        <span class="popover_indicator"></span>
+                        <span class="popover_close">X</span>
+                        <h1>7Get Prepared</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                        <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                    </div>
+                </div>
+
+            </section><!-- END TOP_CONTENT  -->
+            <span class="clearall"></span>
+            
+        </section>
+        <span class="clearall"></span>
+  </div><!-- end global_outside page_content -->
+
+
+    <!-- <div class="global bg bottom">  -->
+    <footer id="mega_footer" class="global_outside">
+        
+        <div class="global_outside footer_graphic">
+            <div id="footer_graphic" class="container">
+                <div></div>
+            </div>
+        </div><!-- end global_outside footer_graphic -->
+
+        <div class="global_outside footer_nav">
+            <div id="footer_nav" class="container">
+                <nav id="audience_nav_box_bottom" class="span-15">
+                    <ul>
+                        <li class="first"><a href="http://www.byui.edu/students/">Students</a></li>
+                        <li><a href="http://www.byui.edu/future-students/">Future Students</a></li>
+                        <li><a href="http://www.byui.edu/parents/">Parents</a></li>
+                        <li><a href="http://www.byui.edu/employees/">Employees</a></li>
+                        <li><a href="http://www.byui.edu/alumni/">Alumni</a></li>
+                        <li class="last"><a href="http://www.byui.edu/visitors/">Visitors</a></li>  
+                    </ul>
+                </nav>
+                <div id="search_box_bottom" class="span-7 last">
+                    <nav>
+                        <ul>
+                            <li class="first"><a href="http://www.byui.edu/directories/">Directories</a></li>
+                            <li><a href="http://www.byui.edu/ask/live-chat/" target="_blank"><span class="italics">Ask</span> <strong>BYUI</strong></a></li>
+                            <li><a href="http://m.byui.edu/">Mobile Tools</a></li>
+                            <li class="last"><a href="https://my.byui.edu/"><span class="italics">my</span><strong>BYUI</strong></a></li>
+                        </ul>
+                    </nav>
+                    <div id="search_wrapper_bottom">
+                        <form method="get" action="http://search.byui.edu/search?">
+                            <input type="text" class="search_box" name="q" alt="Search the BYU-I website"/>
+                            <input type="image" src="images/head/blankimg.png" class="search_box_submit" alt="Submit Search"/>
+                            <input type="hidden" name="site" value="default_collection"/>
+                            <input type="hidden" name="client" value="beta_frontend"/>
+                            <input type="hidden" name="output" value="xml_no_dtd"/>
+                            <input type="hidden" name="proxystylesheet" value="beta_frontend"/>
+                            <input type="hidden" name="proxyreload" value="0"/>
+                        </form>
+                    </div>
+                </div>
+                <nav id="secondary_nav" class="span-9 last">
+                    <ul>
+                            <li class="first"><a href="http://www.byui.edu/directories/">Directories</a></li>
+                            <li><a href="http://www.byui.edu/ask/live-chat/" target="_blank"><span class="italics">Ask</span> <strong>BYUI</strong></a></li>
+                            <li><a href="http://m.byui.edu/">Mobile Tools</a></li>
+                            <li class="last"><a href="https://my.byui.edu/"><span class="italics">my</span><strong>BYUI</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!-- end global_outside footer_nav -->
+
+        <div class="global_outside footer_links_container">
+            <div id="footer_links_container" class="container">
+                <nav id="footer_links">
+                    <div class="span-6 link_list box-shadow">
+                        <h4>Popular Links</h4>
+                        <ul>
+                            <li><a href="http://www.byui.edu/directories/colleges-and-departments/">Academic Programs</a></li>
+                            <li><a href="http://www.byui.edu/activities/">Activities</a></li>
+                            <li><a href="http://www.byui.edu/Admissions/">Admissions</a></li>
+                            <li><a href="http://web.byui.edu/BulletinBoard2/">Bulletin Board</a></li>
+                            <li><a href="http://www.byui.edu/catalog/">Catalog</a></li>
+                            <li><a href="http://web.byui.edu/directory/student/schedule/">Class Schedule</a></li>
+                            <li><a href="http://www.byui.edu/ce/">Continuing Education and Community Connections</a></li>
+                            <li><a href="http://www.byui.edu/devotionals/default.htm">Devotionals and Speeches</a></li>
+                            <li><a href="http://www.byui.edu/employment/">Employment Opportunities</a></li>
+                            <li><a href="http://www.byui.edu/FinancialAid/">Financial Aid and Scholarships</a></li>
+                            <li><a href="http://www.byui.edu/foodservices/">Food Services</a></li>
+                            <li><a href="http://www.byui.edu/sle/default.htm">Giving to BYU-Idaho</a></li>
+                            <li><a href="http://www.byui.edu/housing/">Housing</a></li>
+                            <li><a href="http://www.byui.edu/ilearn/">I-Learn</a></li>
+                            <li><a href="http://www.lib.byui.edu/">Library</a></li>
+                            <li><a href="http://www.byui.edu/online/">Online Learning</a></li>
+                            <li><a href="http://www.byui.edu/registrarsoffice/">Registration</a></li>
+                            <li><a href="http://activities.byui.edu/">Student Services and Activities</a></li>
+                            <li><a href="http://www.byui.edu/webcameras/">Web Cams, Road and Weather Report</a></li>
+                        </ul>
+                    </div>
+                    <div class="span-6 link_list">
+                        <h4>Registration</h4>
+                        <ul>
+                            <li><a href="http://www.byui.edu/StudentHonor/Continuing%20Endorsement.htm ">Ecclesiastical Endorsements</a></li>
+                            <li><a href="http://www.byui.edu/registrarsoffice/RegSchedule.htm">Registration dates</a></li>
+                            <li><a href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https://my.byui.edu">Registering online</a></li>
+                            <li><a href="http://www.byui.edu/catalog/2011-2012/default.htm">Course Offerings</a></li>
+                            <li><a href="http://www.byui.edu/admissions/students/current/meddeferment.shtml">Deferment</a></li>
+                        </ul>
+                        <h4>Help Tools</h4>
+                        <ul>
+                            <li><a href="http://www.besmart.com/">Accept Admissions</a></li>
+                            <li><a href="http://www.byui.edu/CareerServices/">Career Advising</a></li>
+                            <li><a href="https://byui-csm.symplicity.com/">Career Navigator</a></li>
+                            <li><a href="http://www.byui.edu/Disabilities/">Disability Services Center</a></li>
+                            <li><a href="http://www.byui.edu/helpdesk/">Help Desk (technology)</a></li>
+                            <li><a href="http://www.byui.edu/international/">International Student Services</a></li>
+                            <li><a href="http://www.byui.edu/maps/">Maps</a></li>
+                            <li><a href="http://www.byui.edu/eventservices/">Room Scheduling</a></li>
+                            <li><a href="http://www.byui.edu/stc/">Student Technology Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="span-6 link_list">
+                        <h4>Academic Tools</h4>
+                        <ul>
+                            <li><a href="http://www.byui.edu/graduation/apply.htm">Apply for graduation</a></li>
+                            <li><a href="http://web.byui.edu/directory/student/schedule/">Class schedule</a></li>
+                            <li><a href="https://my.byui.edu/ICS/Academics/Degree_Information.jnz">Degree Audit</a></li>
+                            <li><a href="http://owa.byui.edu/">Email</a></li>
+                            <li><a href="http://www.byui.edu/FinancialAid/">Financial Help &amp; Tools</a></li>
+                            <li><a href="http://www.lib.byui.edu/">Library</a></li>
+                            <li><a href="http://www.byui.edu/financialaid/fa/loans.htm">Loans/Grants</a></li>
+                            <li><a href="http://www.byui.edu/financialaid/scholarships/apply.htm">Scholarships</a></li>
+                            <li><a href="https://my.byui.edu/ICS/Academics/">Grade Report</a></li>
+                            <li><a href="http://www.byui.edu/ilearn/">I-Learn</a></li>
+                            <li><a href="http://web.byui.edu/PhysicalFacilities/LockerRentals/LockerRental.aspx">Locker Rentals</a></li>
+                            <li><a href="http://my.byui.edu/">MY.BYUI.EDU</a></li>
+                            <li><a href="http://www.byui.edu/online/">Online Learning</a></li>
+                            <li><a href="http://testing.byui.edu/">Testing Center</a></li>
+                            <li><a href="http://www.byuistore.com/c-21-textbooks.aspx">Textbooks</a></li>
+                            <li><a href="http://www.byui.edu/academic-support-centers/study-skills-tutoring-center/">Tutoring Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="span-6 link_list last">
+                        <h4>Student Life</h4>
+                        <ul>
+                            <li><a href="http://activities.byui.edu/">Activities</a></li>
+                            <li><a href="http://www.byuistore.com/">Bookstore</a></li>
+                            <li><a href="http://www.byui.edu/bulletinboard/">Classified Ads</a></li>
+                            <li><a href="http://www.byui.edu/visitcampus/">Campus Tours</a></li>
+                            <li><a href="http://web.byui.edu/BulletinBoard2/Rides.aspx">Carpools</a></li>
+                            <li><a href="http://www.byui.edu/deanofstudents/">Conflict Mediation</a></li>
+                            <li><a href="http://www.byui.edu/counselingcenter/">Counseling Center</a></li>
+                            <li><a href="http://www.byui.edu/devotionals/default.htm">Devotionals &amp;Forums</a></li>
+                            <li><a href="http://www.byui.edu/eventservices/">Event Services</a></li>
+                            <li><a href="http://www.byui.edu/foodservices/">Food Services</a></li>
+                            <li><a href="http://www.byui.edu/health-center/">Health Center</a></li>
+                            <li><a href="http://www.byui.edu/StudentHonor/">Honor Code</a></li>
+                            <li><a href="http://www.byui.edu/housing/">Housing</a></li>
+                            <li><a href="http://www.byui.edu/Bursar/I-CardPolicies.htm">I-Card services</a></li>
+                            <li><a href="http://www.byui.edu/foodservices/onlinepurchasing/diningdollars/diningdollars.htm">Meal plans</a></li>
+                            <li><a href="http://www.byui.edu/ParkingServices/">Parking Services</a></li>
+                            <li><a href="http://www.byui.edu/security/">Safety and Security</a></li>
+                            <li><a href="http://www.byuicomm.net/">Scroll/I-Comm</a></li>
+                            <li><a href="http://www.byui.edu/StudentEmployment/">Student Employment</a></li>
+                            <li><a href="http://www.byui.edu/tickets/">Ticket Office</a></li>
+                        </ul>
+                    </div>
+                </nav>      
+            </div>
+            <div id="bottom_padding" class="container"></div>
+        </div><!-- end global_outside footer_links_container -->
+
+        <div class="global_outside footer_brand">
+            <div id="footer_brand" class="container">
+                <div id="left_container" class="span-16">
+                    <div>
+                        <a id="lds_church_link" href="http://www.lds.org/" title="The Church of Jesus Christ of Latter-Day Saints">The Church of Jesus Christ of Latter-Day Saints</a>
+                        <a id="byu_link" href="http://www.byu.edu/" title="Brigham Young University - Provo">Brigham Young University - Provo</a>
+                        <a id="byuh_link" href="http://www.byuh.edu/" title="Brigham young University - Hawai'i">Brigham young University - Hawai'i</a>
+                        <a id="ldsbc_link" href="http://www.ldsbc.edu/" title="LDS Business College">LDS Business College</a>
+                    </div>
+                </div>
+                <div id="right_container" class="span-8 last">
+                    <div id="social_icons">
+                        <a id="byui_facebook_link" href="http://www.byui.edu/social-media/facebook/" title="BYU-I Facebook">BYU-I Facebook</a>
+                        <a id="byui_youtube_link" href="http://www.byui.edu/social-media/youtube/" title="BYU-I YouTube">BYU-I YouTube</a>
+                        <a id="byui_linkedIn_link" href="http://www.byui.edu/social-media/linkedin/" title="BYU-I LinkedIn">BYU-I LinkedIn</a>
+                        <a id="byui_social_media_link" href="http://www.byui.edu/social-media/" title="BYU-I Social Media Sites">More</a>
+                    </div>
+                    <div>
+                        <a href="http://www.byui.edu/copyright/policy/terms-of-use/">© 2012</a> 
+                        Brigham Young University–Idaho <address>525 South Center St., Rexburg, ID 83460, <span class="tel"><span class="value">+1 (208) 496-1411</span></span></address>
+                    </div>
+                    <nav id="access_links">
+                        <ul>
+                            <li class="first"><a href="http://www.byui.edu/disabilities/">Disability Services</a></li>
+                            <li class="last"><a href="http://www.byui.edu/feedback/" title="General feedback">Feedback</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div><!-- end global_outside footer_brand --> 
+
+    </footer><!-- end mega_footer global_outside -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
+
+    <!--[if lt IE 7 ]>
+      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+    <script type="text/javascript">
+    function showContent(id, top){
+        hideContent();
+        $('#popover_content div:nth-child(' + id + ')').fadeToggle("slow", function (){});
+        $('.popover_indicator').css('top',top);
+        //use HTML5 Boilerplate-styled browser-conditional .ie8 html class inheritance to target ie8 top position bugfix. IE8 renders grey connector bars up too high without this. See beginning of this HTML file for browser conditionals that write the .ie8 class.
+        $('.ie8 .popover_indicator').css('top',top - 14);
+    }
+    function hideContent() {
+        $('#popover_content div').fadeOut(0, function (){});
+    }
+    $(document).ready(function() { 
+        $('#popover_content > div').height($('#local_nav').height() - 50);
+        $('.popover_close').click(function(){
+            $('#popover_content div').fadeOut(0, function (){});
+        });
+        $('.link_box').click(function(){
+            var id = $(this).contents().find('a.popover_link').attr('id').substring(5);
+            id = Number(id);
+            var top = $(this).contents().find('a.popover_link').offset().top;
+            top = Number(top) - 167;
+            showContent(id, top);
+        });
+     });
+    </script>
+        <!-- University web alaytics code for all university pages. (load last to prevent pageload hangups) -->
+    
+</body>
+</html>
