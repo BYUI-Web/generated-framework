@@ -11,7 +11,7 @@
 @default_indent:15px;
 
 /*@text_color:#6d6e71;*/
-@text_color:@byui_darker_gray;
+@text_color: @byui_darker_gray;
 
 /* deprecated by global variables in variables.less file, but keeps this file compiling */
 /*@byui_med_blue:#007ebd;
@@ -23,8 +23,10 @@
 .sans-serif {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.type, #tinymce {
-	.serif;
+.type, 
+//#tinymce 
+{
+	.sans-serif;
  	font-size: @default_text;
  	/*color:@byui_med_gray;*/
  	color:@text_color;
@@ -38,64 +40,69 @@
 		cursor:pointer;
 	}
 	p {
-		.serif;
+		.sans-serif;
 	 	font-size: @default_text;
 	 	/*color:@byui_med_gray;*/
 	 	color:@text_color;
 	 	line-height:1.4em;
 	}
 	h1 {
-		.sans-serif;
-		font-size:@default_text * 1.57;
-		font-weight:bold;
-		color:@byui_med_blue;
-		.heading_padding;
-		line-height:1em;
-	}
-	h2 {
-		.sans-serif;
-		font-weight:bold;
-		font-size:@default_text * 1.29;
+		.serif;
+		font-size:@default_text * 1.64;
+		font-weight:normal;
+		color:@text_color;
 		.heading_padding;
 		line-height:1.2em;
+
+	}
+	h2 {
+		.serif;
+		font-weight:normal;
+		font-size:@default_text * 1.64;
+		.heading_padding;
+		line-height:1.2em;
+		font-style: italic;
 	}
 	h3 {
-		.sans-serif;
+		.serif;
+		font-weight:normal;
 		font-size:@default_text * 1.29;
 		.heading_padding;
 	}
 	h4 {
-		.sans-serif;
-		font-weight:bold;
+		.serif;
+		font-weight:normal;
+		font-size:@default_text * 1.29;
 		.heading_padding;
-		text-indent:@default_indent;
 		line-height:1.2em;
+		font-style: italic;
 	}
 	h5 {
-		.sans-serif;
+		.serif;
 		.heading_padding;
-		font-weight:bold;
-		text-indent:@default_indent * 2;
+		font-weight:normal;
+		font-size:@default_text * 1.07;
 		line-height:1.2em;
 	}
 	h6 {
-		.sans-serif;
-		font-weight:bold;
+		.serif;
+		font-weight:normal;
+		font-size:@default_text * 1.07;
 		font-style:italic;
 		.heading_padding;
-		text-indent:@default_indent * 3;
 		line-height:1.2em;
+		font-style: italic;
 	}
 	blockquote, .type .blockquote {
 		padding-top:16px;
-		padding-bottom:26px;
-		border-top:1px dotted;
-		border-bottom:1px dotted;
+		padding-bottom:16px;
+		border-top:1px solid;
+		border-bottom:1px solid;
 		color:@byui_med_blue;
 		margin:10px 0 20px 0;
 		.serif;
 		font-style:italic;
-		font-size:@default_text * 1.57;
+		font-size:@default_text;
 		line-height:1.1em;
 	}
 	blockquote .attribution, .type .blockquote .attribution {
