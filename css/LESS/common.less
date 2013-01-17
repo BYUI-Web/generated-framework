@@ -8,15 +8,23 @@
 /*                                                            */
 /**************************************************************/
 
+/* Changes made for white space Dec, 2012 by Samuel Loveland */
+#top_region, #bottom_region, #left_aside, #local_nav, #right_aside, #top_content, #main_content, #bottom_content {
+	margin-bottom: 20px;
+}
+
 /**** BREADCRUMB ****/
 #breadcrumbs {
-	font-size: 10px;
+	font-size: 11px;
+	padding: 11px 13px 6px;
+	margin: 18px 0 20px;
+	background-color: #eee;
 	clear:both;
-	padding:5px 0 0;
+	.rounded-corners;
 	min-height:20px;
-	width:100%;
+	width: 924px;
 	a {
-		color: #666666;
+		color: @byui_med_blue;
 		/*float: left;*/ /* Removed 1.20.2012 as per Shawn Hepworth's request */
 		display: inline;
 		padding: 0px 5px 0px 0;
@@ -30,11 +38,17 @@
 /**** End Breadcrumbs ****/
 
 /******** LEFT NAVIGATION ********/
+.message_block.span-6, #local_nav.span-6, .span-6>#local_nav, #left_aside.span-6{
+	float: left; /* White space fix for left navigation */
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 220px;
+}
 #left_nav, 
 #local_nav {
-	margin-bottom: 10px;
-	/* Jakob edit */
 	margin-bottom: 0px;
+	.rounded-corners;
+	overflow: hidden;
 }
 #left_nav a, #local_nav a {
 	text-decoration: none;
@@ -52,7 +66,7 @@ form.local_search_form {
 input.local_search_box {
 	float: left;
 	font-size: 12px;
-	width: 186px;
+	width: 176px; /* Changed for white space */
 	margin: 0;
 	padding: 6px 5px 6px 8px;
 }
@@ -91,12 +105,29 @@ input.local_search_button:hover {
 .ie8 .collapse {
 	margin-top: -2px;
 }
-
+.folder .expander {
+	position: absolute;
+	top: -5px;
+	right: 5px;
+	margin: 0;
+	padding: 12px;
+	width: 15px;
+	height: 15px;
+	text-indent: -99999px;
+	background: url(../images/gray-arrow.png) no-repeat;
+	background-position: 12px 12px;
+	transition: transform .4s;
+	-webkit-transition: -webkit-transform .4s;
+	-moz-transition: -moz-transform .4s;
+	-ms-transition: -ms-transform .4s;
+	-o-transition: -o-transform .4s;
+}
 .folder > .expander{
-	background-color: #eee;
-	margin-top: -36px;
-	height: 24px;
 	padding-top: 12px;
+	top: 0px;
+	right: 0px;
+	background: url(../images/white-arrow.png) no-repeat;
+	background-position: 12px 12px;
 }
 .expander {
 	color: #3B3B3B;
@@ -110,20 +141,37 @@ input.local_search_button:hover {
 	line-height: 12px;
 	text-align: center;
 }
-.expander:hover{
-	background-color: #CCC;
+.folder > .expander.open, .expander.open{
+	background-position: 12px 12px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 }
+.ie6 .folder .expander.open,
+.ie7 .folder .expander.open,
+.ie8 .folder .expander.open {
+	background: url(../images/gray-arrow-down.png) no-repeat;
+	background-position: 12px 12px;
+}
+.ie6 .folder > .expander.open,
+.ie7 .folder > .expander.open,
+.ie8 .folder > .expander.open {
+	background: url(../images/white-arrow-down.png) no-repeat;
+	background-position: 12px 12px;
+}
+
 .accordion li {
 	list-style: none outside none;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 .accordion {
 	margin: 0;
 	padding: 0;
 	font-size: 8px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
 }
 .accordion a {
 	display: block;
@@ -135,14 +183,17 @@ input.local_search_button:hover {
 .accordion .lvl_1 {
 	float: left;
 	color: black;
-	width: 95%;
-	min-height: 26px;
-	padding: 10px 0 0 5%;
+	padding: 10px 0 10px 13px;
 	margin: 0;
 	font-size: 12px;
+	width: 165px;
 }
 .accordion .lvl_2, .accordion .lvl_4 {
 	color: #222;
+	display: block;
+	margin-right: 0;
+	padding: 5px 8px;
+	width: 155px;
 }
 .accordion .lvl_3, .accordion .lvl_5 {
 	color: #444;
@@ -152,11 +203,9 @@ input.local_search_button:hover {
 }
 
 .accordion > li {
-	background-color: #fbfbfb;
-	.box_gradient_2stop(#eeeeee,#fbfbfb);
-	border-bottom: 1px dotted #444;
+	background-color: #eee;
+	border-bottom: 1px solid #fff;
 	overflow: hidden;
-	min-height: 36px;
 	width: 100%;
 }
 .ie6 .accordion > li,
@@ -168,18 +217,17 @@ input.local_search_button:hover {
 .accordion > li ul{
     padding: 5px 0 5px 12px;
 	display: none; /*needed for on load not expanded*/
-	border-top: 1px solid #444;
 }
 .accordion > li > ul{
-	background-image: url("../images/leftNav/accordion_background_270x6.jpg");
-	background-repeat: repeat-y;
+	background-color: #ccc;
 	float: left; /*needed for Firefox*/
+	padding: 0 10px;
+	border-top: none;
 }
 .accordion > li > ul li {
 	background-repeat: no-repeat;
 	background-position: 0px 10px;
 	min-height: 30px;
-	/**min-height: 20px; /*for IE*/
 }
 .ie6 .accordion > li > ul > li > ul li,
 .ie7 .accordion > li > ul > li > ul li,
@@ -189,16 +237,18 @@ input.local_search_button:hover {
 .accordion > li > ul > li /*Level 2*/
 , .accordion li > ul > li > ul > li > ul > li /*Level 4*/
 , .accordion li > ul > li > ul > li > ul > li > ul > li > ul > li {  /* Level 6 */
-	background-image: url('../images/leftNav/blue-arrow_5x9.png');
+	/* This background image will now only be used on the current page 1/19/13 Sam Loveland */
+	/* background-image: url('../images/leftNav/blue-arrow_5x9.png'); */ 
 }
 .accordion > li > ul > li > ul > li /*Level 3*/
 , .accordion li > ul > li > ul > li > ul > li > ul > li {  /* Level 5 */
-	background-image: url('../images/leftNav/gray-arrow_5x9.png');
 }
 .accordion > li > ul {
 	width: 216px;
 }
 .accordion > li > ul > li > ul {
+	margin: 0 10px;
+	padding: 0;
 	width: 204px;
 }
 .accordion > li > ul > li > ul > li > ul {
@@ -206,6 +256,9 @@ input.local_search_button:hover {
 }
 .accordion > li > ul > li > ul > li > ul > li > ul {
 	width: 180px;
+}
+.active_page{
+	background-image: url('../images/leftNav/blue-arrow_5x9.png');
 }
 	/* 	End Accordion */
 
@@ -271,49 +324,59 @@ input.local_search_button:hover {
 	*top: -20px;
 }
 #page_title {
-  margin: 0px 0px 10px 0px;
-  margin: 0px 0px 0px 0px;
-  padding: 8px 0;
-  color: #363636;
-  background-color: white;
-  border-top: 1px dotted #666;
-  border-bottom: 1px dotted #666;
+	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+	padding: 0 0 16px;
+	color: #326ba9;
+	background-color: white;
+	border-bottom: 1px solid #666;
 }
 #page_title h2 {
-  color: #363636;
-  margin: 0;
-  padding: 0px 10px;
-  font-size: 20px;
-  line-height: 20px;
-  *height: 20px;
+	color: #326ba9;
+	margin: 0;
+	padding: 0;
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 1.2em;
+	*height: 20px;
 }
 h4.sub_title {
-font-size: 14px;
-padding-left: 10px;
-font-style: italic;
-margin: 0;
+	font-size: 14px;
+	padding-left: 10px;
+	font-style: italic;
+	margin: 0;
 }
 /***** END PAGE TITLE *****/
 
-/* Box Headers */
+/***** Box Headers *****/
 .box_header {
-  display: block;
-  text-transform: uppercase;
-  color: #FFF;
-  line-height: 16px;
-  /*padding: 0.4em 1em;*/
-  padding: 11px 13px 11px;
-  margin: 0px;
-  letter-spacing: 0.1em;
-  background: #326BA9; /* Old browsers */
-  .box_gradient_4stop(#1a5e80, #326BA9, #326BA9, #1a5e80);
+	display: block;
+	text-transform: uppercase;
+	color: #FFF;
+	line-height: 16px;
+	/*padding: 0.4em 1em;*/
+	padding: 11px 13px 11px;
+	margin: 0px;
+	letter-spacing: 0.1em;
+	background: #326BA9;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-ms-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 h2.box_header {
 	font-size:11px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-ms-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 .box_header a{
 	color:#fff;
 }
+/***** END Box Headers *****/
 
 /******** HIGHLIGHTED LINKS	********/
 #highlighted_links {
@@ -322,18 +385,17 @@ h2.box_header {
 	/* Jakob edit */
 	margin-bottom: 0px;
 	/*clear:both;*/
+	margin-top: 20px;
+	width: 220px;
+	.rounded-corners;
+	overflow: hidden;
 }
 #highlighted_links a {
-	background-image: url('../images/leftNav/blue-arrow_5x9.png');
-	background-repeat: no-repeat;
-	background-position: 15px 8px;
-	border-bottom: 1px dotted #444;
-	border-left: 1px solid #CCC;
-	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #fff;
 	display: block;
 	color: #3C3C3C;
 	font-size: 11px;
-	padding: 5px 0 5px 30px;
+	padding: 5px 0 5px 13px;
 }
 #highlighted_links a:hover {
 	text-decoration: underline;
@@ -448,21 +510,33 @@ h2.box_header {
 
 
 .message_block{
-	border:1px solid #cecece;
+	border: none;
 	overflow:hidden;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	/* Jakob Edit */
 	margin-bottom: 0px;
 	// margin-top: 10px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-ms-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 /*  Jakob Edit */
 #university_message.message_block.span-6,
 #campus_messaging.message_block.span-8,
 #news.message_block_short.span-8.last,
 #left_nav .message_block {
-	margin-top:10px;
+	margin-top:20px;
 }
-
+#GeneralAudiencePage #main_content .message_block,
+#GeneralAudiencePage #main_content .message_block_short {
+	border: none;
+}
+#main_content .message_block, #bottom_region .message_block {
+	margin-top: 0;
+}
 .message_block_short{
 	/*height:140px;*/
 	overflow:hidden;
@@ -473,7 +547,12 @@ h2.box_header {
 	background-color:#ebebeb;
 	color:#363636;
 	height:39px;
-	border-bottom: 1px solid #cecece;
+	border-bottom: 1px solid #fff;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	-ms-border-radius: 4px 4px 0 0;
+	-o-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 .message_block_content{
 	background-color:#fff;
@@ -499,12 +578,13 @@ h2.box_header {
 }
 
 .message_title_block{
-	float:right;
+	float:left;
 	width:80%;
 	margin-top:11px;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 11px;
 	clear:none;
+	margin-left: 13px;
 }
 
 .message_block {
@@ -1328,7 +1408,21 @@ h2.box_header {
 		}
 	}
 }
+
 /*END CYCLE GALLERY*/
+
+
+/**************** Content Page ****************/
+/* Right Aside */
+#right_aside.span-6 {
+	width: 220px;
+	margin-left: 10px;
+}
+#right_aside.span-6 img, #right_aside.span-6 img.span-6 {
+	max-width: 100%;
+}
+
+
 
 /**************** END COMMON ELEMENTS ****************/
 /*COMMON END*/

@@ -1,13 +1,17 @@
-/*GLOBAL BEGIN*/
+// /*GLOBAL BEGIN*/
 
-/**************** BEGIN GLOBAL CSS RULES [HEADER/FOOTER] ******************/
-/*                                                                        */
-/*      GLOBAL elements are those elements that appear on EVERY           */
-/*      page type. These occur mostly in the HEADER/FOOTER                */
-/*      areas and are to be treated with immense respect.                 */
-/*                                                                        */
-/**************************************************************************/
+// /**************** BEGIN GLOBAL CSS RULES [HEADER/FOOTER] ******************/
+// /*                                                                        */
+// /*      GLOBAL elements are those elements that appear on EVERY           */
+// /*      page type. These occur mostly in the HEADER/FOOTER                */
+// /*      areas and are to be treated with immense respect.                 */
+// /*                                                                        */
+// /**************************************************************************/
 
+.global_outside {
+	width:100%;
+	min-width: 980px;
+}
 .container {
 	position:relative;
 }
@@ -26,28 +30,35 @@
 	margin: auto -1000px;
 	padding-left: 1000px;
 	padding-right: 1000px;
-	/*margin: auto -50%;
-	padding-left: 50%;
-	padding-right: 50%;*/
 	overflow: auto;
 }
 nav li {
 	cursor: pointer;
 }
+
 /******** HEADER ********/
-#top_header {
-	/*padding-top: 10px;*/
+
+.top_header {
 	background-color: #252525;
+	overflow: visible;
 	height: 38px;
+}
+#top_header {
+	height: 38px;
+	overflow:hidden;
 }
 #main_nav ul {
 	padding-left: 0;
 }
+.main_header {
+	background-color: #326ba9;
+	.box_gradient_4stop(#2b5a8e, #326ba9, #326ba9, #326ba9);
+	overflow: visible;
+	height:70px;
+}
 #main_header {
 	padding-top: 15px;
 	height: 55px;
-	background-color: #326ba9;
-	.box_gradient_4stop(#2b5a8e, #326ba9, #326ba9, #326ba9);
 	overflow: visible;
 }
 #university_name {
@@ -65,18 +76,17 @@ nav li {
 }
 #search_box{
 	position: absolute;
-	top:0;
 	left: 680px;
 	clear: both;
 	background: url('../images/head/searchboxbkg.jpg') repeat-x #326ba9;
 	-moz-box-shadow: 0 0px 15px #000;
 	-webkit-box-shadow: 0 0px 15px #000;
 	box-shadow: 0 0px 15px #000;
+	top:-38px;
 }
 #search_box ul{
 	font-size: 8px;
-	/*margin: 4px 0 0 12px;*/
-	margin: 4px 0 0 8px;
+	margin:4px 0 0 8px
 }
 #search_box ul li{
 	display: inline;
@@ -102,11 +112,11 @@ nav li {
 		border: 0px;
 		background-color: transparent;
 		position: relative;
-		top: -3px;
 		margin: 0;
 		padding-left: 4px;
-		width: 227px;
 		font-size: 13px;
+		width: 220px;
+		top:1px;
 	}
 	.search_box_submit {
 		position:relative;
@@ -117,6 +127,8 @@ nav li {
 		background-color: transparent;
 		width: 20px;
 		height: 20px;
+		float: right;
+		right: 2px;
 	}
 }
 #search_wrapper:hover .search_box_submit {
@@ -139,6 +151,7 @@ nav li {
 }
 
 /******** HEADER AND FOOTER *********/
+
 #top_header a, #main_header a, #mega_footer a {
 	color: #fff;
 }
@@ -234,6 +247,7 @@ nav li {
 }
 
 /******** FOOTER ********/
+
 #footer_graphic {
 	background: url('../images/foot/background_1.png') repeat-x;
 	clear:both;
@@ -242,9 +256,19 @@ nav li {
 	background: url('../images/foot/taylor_graphic.png') no-repeat center;
 	height: 146px;
 }
-	
+.footer_graphic {
+	background-image:url('../images/interface/mid_bg.png');
+	background-repeat:repeat-x;
+	background-position:0 -5px;
+	height:146px;
+	#footer_graphic {
+		margin-bottom:0;
+		padding:0;
+	}
+}
+
 /**** footer navigation ***/	
-#footer_nav {
+.footer_nav {
 	background-color: #326ba9;
 	height:78px;
 }
@@ -270,9 +294,12 @@ nav li {
 }
 
 /**** quicklink area ****/
-#footer_links_container {
-	background: url('../images/foot/background_2.png') repeat;
-	/*overflow: auto;*/
+.footer_links_container {
+	background: #333333;
+	#footer_links_container {
+		background:transparent;
+		clear: both;
+	}
 }
 #footer_links {
 	overflow: hidden;
@@ -283,6 +310,7 @@ nav li {
 }
 .link_list {
 	background-color: #252525;
+	.rounded-corners;
 	margin: 10px 10px -500px 0;
 	font-size: 12px;
 	padding: 15px 0 500px 0;
@@ -315,7 +343,7 @@ nav li {
 	font-weight: bold;
 	color: #FFF;
 	padding-left: 15px;
-	
+
 }
 
 /**** branding area ****/
@@ -326,6 +354,10 @@ nav li {
 	padding-top: 22px;
 	padding-bottom: 20px;
 	overflow:hidden;
+}
+.footer_brand {
+	background:#000000;
+	min-height:187px;
 }
 #left_container div a {
 	float: left;
@@ -434,7 +466,7 @@ nav li {
 	font-size:11px;
 }
 #bottom_padding{
-	background: url("../images/foot/background_2.png") repeat scroll 0 0 transparent;
+	background: #333333;
 	height: 10px;
 }
 .last {

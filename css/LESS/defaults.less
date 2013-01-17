@@ -18,16 +18,18 @@ a:hover, a:active {
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #666666;
-	overflow-x: hidden;
-	font-size: 14pt;
+	overflow-x: visible;
+	font-size: @default_text;
 	-webkit-font-smoothing: antialiased;
+	width:inherit;
 	/*font-smooth: always;*/
 	/*background:white;*/
 }
 html.ie7 {
 /*	margin-left: 5%;
 	margin-right: 5%;*/
-	overflow-x:hidden;
+	overflow-x:visible;
+	width:inherit;
 	/*max-width:101%;
 	body {
 		max-width:101%;
@@ -37,7 +39,6 @@ html.ie7 {
 		}
 	}*/
 } 
-
 /*Formatting quoted code*/
 pre {
 	padding: 15px;
