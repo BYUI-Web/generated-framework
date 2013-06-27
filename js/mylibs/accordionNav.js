@@ -58,6 +58,7 @@ function open_accordion () {
 					if (accr_links.eq(j).next().attr("class") == 'expander')
 					{
 					 	accr_links.eq(j).next().html("&ndash;");
+					 	accr_links.eq(j).next().addClass("open");
 					 	accr_links.eq(j).next().next().slideDown("normal");
 					}
 
