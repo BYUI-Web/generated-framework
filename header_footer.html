@@ -37,6 +37,9 @@
 	<!-- Modernizr script, for js and feature detection -->
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 	
+	<!-- jQuery -->
+	<script id="jQueryLoad" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
 </head>
 
 <body id="global_redo"><!-- Body tag must have page template name in it to inherit template-specific css rules -->
@@ -110,7 +113,6 @@
 	</div><!-- end global_outside main_content -->
 
 
-	<!-- <div class="global bg bottom">	 -->
 	<footer id="mega_footer" class="global_outside">
 		
 		<div class="global_outside footer_graphic">
@@ -294,21 +296,14 @@
 		</div><!-- end global_outside footer_brand --> 
 
 	</footer><!-- end mega_footer global_outside -->
-		
-    <!-- </div> -->
-	<!--removed the jQuery load from the footer. It null-out objects (like cycle) declared in the body.-->
-	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-    chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <!--[if lt IE 7 ]>
-      <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-      <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-    <![endif]-->
+
     <!-- <script src="js/mylibs/leftNav_contactExpander.js"></script> -->
     <!-- Used for facebook feed component -->
+
     <!--Temporary Qualtrics survey -->
     <!--BEGIN QUALTRICS POPUP-->
 	<script type="text/javascript">
-	var q_viewrate=10;
+	var q_viewrate=.1;
 	if (Math.random() < q_viewrate / 100){var q_popup_f = function(){var q_script = document.createElement("script");var q_popup_g = function(){new QualtricsEmbeddedPopup({
 		id: "SV_1GPFZmoDSXX5cUc",
 		imagePath: "http://qdistribution.qualtrics.com/WRQualtricsShared/Graphics/",
@@ -325,10 +320,17 @@
 		linkText:"Yes, I will take the Survey!"
 	});};q_script.onreadystatechange= function () {if (this.readyState == "loaded") q_popup_g();};q_script.onload= q_popup_g;q_script.src="http://qdistribution.qualtrics.com/WRQualtricsShared/JavaScript/Distribution/popup.js";document.getElementsByTagName("head")[0].appendChild(q_script);};if (window.addEventListener){window.addEventListener("load",q_popup_f,false);}else if (window.attachEvent){r=window.attachEvent("onload",q_popup_f);}else {};};
 	</script>
-	<noscript><a target="_blank" href="http://www.qualtrics.com/crm-integration">CRM Integration</a><br/><a target="_blank" href="http://www.qualtrics.com/enterprise-feedback-management">Enterprise Feedback Management</a><br/><a target="_blank" href="https://byui.qualtrics.com/WRQualtricsSurveyEngine/?SID=SV_1GPFZmoDSXX5cUc">Yes, I will take the Survey!</a><br/></noscript>
+	<noscript>Please take a moment to participate in a <a target="_blank" href="https://byui.qualtrics.com/WRQualtricsSurveyEngine/?SID=SV_1GPFZmoDSXX5cUc">survey</a> about our new web site design.</noscript>
 	<!--END QUALTRICS POPUP-->
+
     <!-- University web alaytics code for all university pages. -->
-    <!--    <script type="text/javascript" src="http://web.byui.edu/Omniture/omniture_code.js"></script>  -->
-    <!--    <script type="text/javascript" src="http://web.byui.edu/Omniture/s_code.js"></script>  -->
+   	<script type="text/javascript" src="http://web.byui.edu/Omniture/omniture_code.js"></script>
+   	<img name="s_i_byuibyuiedu" height="1" width="1" border="0" style="position:absolute;top:0px;left:0px;" alt="" src="http://byuidaho.112.2O7.net/b/ss/byuibyuiedu/1/H.8-pdvu-2/s81115526936482?[AQB]&amp;ndh=1&amp;t=27/5/2013%208%3A56%3A14%204%20360&amp;ns=byuidaho&amp;g=http%3A//www.byui.edu/&amp;cc=USD&amp;s=1920x1080&amp;c=24&amp;j=1.3&amp;v=Y&amp;k=Y&amp;bw=1181&amp;bh=946&amp;p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BWebEx64%20General%20Plugin%20Container%3BAdobeExManDetect%3BFlip4Mac%20Windows%20Media%20Plugin%3BGoogle%20Talk%20Plugin%3BiPhotoPhotocast%3BLogMeIn%20Plugin%201.0.0.730%3BLync%20Meeting%20Join%20Plug-in%3BGoogle%20Talk%20Plugin%20Video%20Accelerator%3BGoogle%20Talk%20Plugin%20Video%20Renderer%3BQuickTime%20Plug-in%207.7.1%3BSharePoint%20Browser%20Plug-in%3BSilverlight%20Plug-In%3B&amp;[AQE]">
+    <script type="text/javascript" src="http://web.byui.edu/Omniture/s_code.js"></script>
+
+    <!-- LivePerson Chat code for syncing operator with user's web page. Should be on pages that use livechat (everywhere). -->
+    <script language="javascript">
+		var lpMTagConfig = {'lpServer' : "server.iad.liveperson.net",'lpNumber' : "1132447",'lpProtocol' : "https"}; function lpAddMonitorTag(src){if(typeof(src)=='undefined'||typeof(src)=='object'){src=lpMTagConfig.lpMTagSrc?lpMTagConfig.lpMTagSrc:'/hcp/html/mTag.js';}if(src.indexOf('http')!=0){src=lpMTagConfig.lpProtocol+"://"+lpMTagConfig.lpServer+src+'?site='+lpMTagConfig.lpNumber;}else{if(src.indexOf('site=')<0){if(src.indexOf('?')<0)src=src+'?';else src=src+'&';src=src+'site='+lpMTagConfig.lpNumber;}};var s=document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('charset','iso-8859-1');s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s);} if (window.attachEvent) window.attachEvent('onload',lpAddMonitorTag); else window.addEventListener("load",lpAddMonitorTag,false);
+	</script>
 </body>
 </html>
