@@ -257,9 +257,6 @@ input.local_search_button:hover {
 .accordion > li > ul > li > ul > li > ul > li > ul {
 	width: 180px;
 }
-.active_page{
-	background-image: url('../images/leftNav/blue-arrow_5x9.png');
-}
 	/* 	End Accordion */
 
 
@@ -400,6 +397,114 @@ h2.box_header {
 #highlighted_links a:hover {
 	text-decoration: underline;
 }
+
+/******** FEEDBACK BOX	********/
+#slideout {
+	position: fixed;
+	top: 200px;
+	width: 490px;
+	right: -453px;
+    height: 145px;
+	background: #326ba9;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+#slideout > img
+{
+	float: left;
+	margin: 12px 0;
+}
+#slideout_inner {
+	overflow: hidden;
+	background: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #326ba9;
+	width: 400px;
+    height: 143px;
+	padding: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	color:black;
+    text-align: left;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	/*-webkit-border-radius: 0 0 0 5px;*/
+	/*-moz-border-radius: 0 0 0 5px;*/
+	/*border-radius: 0 0 0 5px;*/
+}
+.slide-text{
+	margin:2px;
+    font-size:80%;
+    color: #999;
+}
+#feedback-button{
+    width: 141px;
+    height: 20px;
+    font-size: 80%;
+    margin-top: 10px;
+    padding-top: 7px;
+}
+#feedback-button a{
+    list-style: none;
+    padding-left: 17px;
+}
+#feedback-button a, #feedback-button a:visited{
+    text-decoration:none;
+    color: black;
+}
+#slide-header{
+    margin-top:13px;
+    margin-bottom:6px;
+}
+#slideout:active {
+	right: 0px
+}
+#slideout:focus{
+	right: 0px;
+}
+#slideout a {
+	outline: 0;
+}
+#slideout2 {
+	display: none;
+}
+noindex:-o-prefocus, #slideout2 {
+	display: block;
+	position: fixed;
+	top: 200px;
+	width: 485px;
+	right: -450px;
+    height: 145px;
+	background: #326ba9;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+	outline: 0;
+}
+noindex:-o-prefocus, #slideout2 > img
+{
+	float: left;
+	margin: 12px 0;
+	outline: 0;
+	border: none;
+}
+noindex:-o-prefocus, #slideout {
+	display: none;
+}
+
 
 /******** CONTACT INFO BOX	********/
 #contact_info {
