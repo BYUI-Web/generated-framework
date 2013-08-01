@@ -46,7 +46,7 @@
 }
 #left_nav, 
 #local_nav {
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	.rounded-corners;
 	overflow: hidden;
 }
@@ -59,6 +59,9 @@
 /**** LOCAL SEARCH ****/
 .local_search {
 	height: 29px;
+}
+.localSearch {
+	display: none;
 }
 form.local_search_form {
 	float: left;
@@ -261,7 +264,11 @@ input.local_search_button:hover {
 
 
 /***** UNIVERITY MESSAGE *****/
-
+.block-link {
+	&:hover {
+		background-color: #aaa;
+	}
+}
 .message_top_narrow{
 	color: #ddd;
 	font-size: 10px;
@@ -401,6 +408,7 @@ h2.box_header {
 /******** FEEDBACK BOX	********/
 #slideout {
 	position: fixed;
+	z-index:999999;
 	top: 200px;
 	width: 490px;
 	right: -453px;
@@ -476,6 +484,7 @@ h2.box_header {
 }
 #slideout2 {
 	display: none;
+	z-index:999999;
 }
 noindex:-o-prefocus, #slideout2 {
 	display: block;
@@ -511,8 +520,8 @@ noindex:-o-prefocus, #slideout {
 	border: 1px solid #999;
 	padding: 5px 2px 2px 2px;
 	margin-bottom: 10px;
-	width: 220px;
-	margin-bottom: 0px;
+	width: 214px;
+	margin-bottom: 20px;
 	margin-top: 10px;
 }
 #contact_info #location {
@@ -617,36 +626,17 @@ noindex:-o-prefocus, #slideout {
 .message_block{
 	border: none;
 	overflow:hidden;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	/* Jakob Edit */
-	margin-bottom: 0px;
-	// margin-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 	-webkit-border-radius: 4px 4px 0 0;
 	-moz-border-radius: 4px 4px 0 0;
 	-ms-border-radius: 4px 4px 0 0;
 	-o-border-radius: 4px 4px 0 0;
 	border-radius: 4px 4px 0 0;
 }
-/*  Jakob Edit */
-#university_message.message_block.span-6,
-#campus_messaging.message_block.span-8,
-#news.message_block_short.span-8.last,
-#left_nav .message_block {
-	margin-top:20px;
-}
-#GeneralAudiencePage #main_content .message_block,
-#GeneralAudiencePage #main_content .message_block_short {
-	border: none;
-}
-#main_content .message_block, #bottom_region .message_block {
-	margin-top: 0;
-}
 .message_block_short{
-	/*height:140px;*/
+	border: none;
 	overflow:hidden;
-	/*margin-bottom: 20px;*/
-	border:1px solid #cecece;
 }
 .message_block_top_nav{
 	background-color:#ebebeb;
@@ -670,33 +660,34 @@ noindex:-o-prefocus, #slideout {
 	width:100%;
 }
 .message_image_nav_block{
-	display:block;
-	height:39px;
-	width:39px;
-	float:left;
-	border-right: 1px solid #cecece;
-	z-index:99;
-	background-image: url('../images/byui_home/message_arrow.png');
+	display: none;
 }
 .message_image_nav_block:hover{
 	background-image: url('../images/byui_home/message_arrow_hover.png');
 }
 
 .message_title_block{
-	float:left;
-	width:80%;
-	margin-top:11px;
 	text-transform: uppercase;
 	font-size: 11px;
 	clear:none;
-	margin-left: 13px;
+
+	a {
+		display: block;
+		padding:11px 13px;
+		color: #363636;
+		-webkit-border-radius: 4px 4px 0 0;
+		-moz-border-radius: 4px 4px 0 0;
+		-ms-border-radius: 4px 4px 0 0;
+		-o-border-radius: 4px 4px 0 0;
+		border-radius: 4px 4px 0 0;
+		&:hover {  
+			background: #ddd;
+		}
+
+	}
 }
 
 .message_block {
-	/************************** BEGIN CAMPUS MESSAGING COMPONENT *************************/
-	margin-bottom:10px;
-	/* Jakob Edit */
-	margin-bottom:0px;
 	&#photo_album {
 		.message_block_content {
 			a {
