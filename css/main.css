@@ -3071,7 +3071,7 @@ a.message_title_block {
 }
 .fff .scrollbar-pane {
   margin-right: 12px;
-  width: 208px;
+  width: 215px;
 }
 .fff .scrollbar-handle-container {
   background: #EEE;
@@ -3103,7 +3103,7 @@ a.message_title_block {
 .fb-wall {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size: 13px;
-  width: 186px;
+  width: 196px;
   line-height: 1.2em;
   color: #333333;
   padding: 10px;
@@ -5345,7 +5345,6 @@ a.message_title_block {
   position: absolute;
   right: 5px;
   top: 3px;
-  opacity: 0.4;
   -webkit-transition: opacity 0.7s ease-in-out;
   -moz-transition: opacity 0.7s ease-in-out;
   -ms-transition: opacity 0.7s ease-in-out;
@@ -5360,7 +5359,6 @@ a.message_title_block {
 }
 #GeneralAudiencePage #left_aside .link_box .box_header:hover .link_expansion_arrow,
 #GeneralAudiencePage #local_nav .link_box .box_header:hover .link_expansion_arrow {
-  opacity: 1.0;
   text-decoration: none;
 }
 #GeneralAudiencePage #left_aside .link_box .box_header.box_header_new_student,
