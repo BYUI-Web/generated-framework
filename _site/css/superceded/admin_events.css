@@ -1,0 +1,127 @@
+/*ADMIN_EVENTS BEGIN*/
+.ie7 #ActivitiesFront #e_list thead,
+.ie6 #ActivitiesFront #e_list thead,
+.ie7 #admin_events #e_list thead,
+.ie6 #admin_events #e_list thead {
+  display: none;
+}
+#ActivitiesFront #events_list table, #admin_events #events_list table {
+  display: block;
+  margin: 0;
+  width: 700px;
+}
+#ActivitiesFront #events_list thead tr.fixed_header, #admin_events #events_list thead tr.fixed_header {
+  display: block;
+  vertical-align: middle;
+  background: #ffffff;
+}
+#ActivitiesFront #events_list thead th, #admin_events #events_list thead th {
+  color: #111111;
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  *background: #ffffff !important;
+}
+#ActivitiesFront #events_list tbody tr, #admin_events #events_list tbody tr {
+  vertical-align: inherit;
+  height: 28px;
+}
+#ActivitiesFront #events_list tbody tr.even, #admin_events #events_list tbody tr.even {
+  background-color: #dddddd;
+}
+#ActivitiesFront #events_list tbody tr:hover,
+#admin_events #events_list tbody tr:hover,
+#ActivitiesFront #events_list tbody tr.even:hover,
+#admin_events #events_list tbody tr.even:hover {
+  background-color: #A1A1A1;
+}
+#ActivitiesFront #events_list #e_list, #admin_events #events_list #e_list {
+  display: block;
+  height: 280px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+#ActivitiesFront #events_list #e_list thead, #admin_events #events_list #e_list thead {
+  position: absolute;
+  top: -5000px;
+}
+#ActivitiesFront #events_list th,
+#admin_events #events_list th,
+#ActivitiesFront #events_list td,
+#admin_events #events_list td {
+  width: 50px;
+  padding: 0;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  background: inherit;
+}
+#ActivitiesFront #events_list th.heading,
+#admin_events #events_list th.heading,
+#ActivitiesFront #events_list td.title,
+#admin_events #events_list td.title {
+  width: 423px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 10px;
+  letter-spacing: 1.1px;
+}
+#ActivitiesFront #events_list td.title, #admin_events #events_list td.title {
+  text-align: left;
+  padding-left: 10px;
+}
+#ActivitiesFront #events_list tr:hover .fall_active a, #admin_events #events_list tr:hover .fall_active a {
+  background-position: 0 0px;
+}
+#ActivitiesFront #events_list tr:hover .spring_active a, #admin_events #events_list tr:hover .spring_active a {
+  background-position: -36px 0px;
+}
+#ActivitiesFront #events_list tr:hover .winter_active a, #admin_events #events_list tr:hover .winter_active a {
+  background-position: -72px 0px;
+}
+#ActivitiesFront #events_list tr:hover .summer_active a, #admin_events #events_list tr:hover .summer_active a {
+  background-position: -108px 0px;
+}
+#ActivitiesFront #events_list tr:hover .gal_active a, #admin_events #events_list tr:hover .gal_active a {
+  background-position: -145px 0px;
+}
+#ActivitiesFront #events_list td a, #admin_events #events_list td a {
+  display: block;
+  width: 50px;
+}
+#ActivitiesFront #events_list td.title a, #admin_events #events_list td.title a {
+  width: 379px;
+}
+#ActivitiesFront #events_list .summer_active a, #admin_events #events_list .summer_active a {
+  background: url("../images/interface/events/semester_icon_sprite-200x52.png") no-repeat;
+  background-position: -108px -26px;
+  text-indent: -9000px;
+}
+#ActivitiesFront #events_list .fall_active a, #admin_events #events_list .fall_active a {
+  background: url("../images/interface/events/semester_icon_sprite-200x52.png") no-repeat;
+  background-position: 0 -26px;
+  text-indent: -9000px;
+}
+#ActivitiesFront #events_list .winter_active a, #admin_events #events_list .winter_active a {
+  background: url("../images/interface/events/semester_icon_sprite-200x52.png") no-repeat;
+  background-position: -72px -26px;
+  text-indent: -9000px;
+}
+#ActivitiesFront #events_list .spring_active a, #admin_events #events_list .spring_active a {
+  background: url("../images/interface/events/semester_icon_sprite-200x52.png") no-repeat;
+  background-position: -36px -26px;
+  text-indent: -9000px;
+}
+#ActivitiesFront #events_list .gal_active a, #admin_events #events_list .gal_active a {
+  background: url("../images/interface/events/semester_icon_sprite-200x52.png") no-repeat;
+  background-position: -145px -26px;
+  text-indent: -9000px;
+}
+#ActivitiesFront #exbanding_bar, #admin_events #exbanding_bar {
+  background: url("../images/interface/events/expanding_bar.png") no-repeat;
+  background-position: 0px 0px;
+  width: 708px;
+  height: 14px;
+  float: right;
+  cursor: pointer;
+}
+/*ADMIN_EVENT END*/

@@ -1,0 +1,167 @@
+/*NEWS_INDEX BEGIN*/
+/*ARTICLE SUMMARIES FOR NEWS INDEX*/
+.article_abstract {
+  padding: 10px 0 10px 10px;
+  overflow: auto;
+  border-bottom: 1px dotted #444;
+}
+.article_abstract a img {
+  width: 100%;
+}
+.article_date {
+  color: #636363;
+  font-size: 11px;
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+  padding: 0 0 10px;
+  margin: 0;
+}
+.article_title {
+  padding: 0 0 6px 0;
+  line-height: 14px;
+}
+.article_title a {
+  color: #585858;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+  line-height: 16px;
+  text-decoration: none;
+}
+.article_abstract .article_summary {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-family: minion-pro-1, minion-pro-2, georgia, serif;
+}
+.readMore_link {
+  font-size: 9px;
+  font-family: news-gothic-std-1, news-gothic-std-2, Helvetica, Arial, sans-serif;
+}
+/*END ARTICLE SUMMARIES*/
+/*PAGINATION FOR NEWS INDEX*/
+#pagination_link {
+  float: left;
+  margin: 10px 0px 10px 10px;
+}
+#pagination_link a {
+  color: black;
+  height: 24px;
+  width: 24px;
+  margin: 0 5px 0 0;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 25px;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  background: -moz-linear-gradient(top, #dddddd, #eeeeee);
+  filter: progid:dximagetransform.microsoft.gradient(startColorStr=#dddddd, endColorStr=#eeeeee);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#DDDDDD, endColorstr=#EEEEEE)";
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#eeeeee));
+  background: -moz-linear-gradient(top, #dddddd, #eeeeee);
+  border: 1px solid #CCC;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#pagination_link a.active {
+  background: -moz-linear-gradient(top, #aaaaaa, #cccccc);
+  filter: progid:dximagetransform.microsoft.gradient(startColorStr=#aaaaaa, endColorStr=#cccccc);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#AAAAAA, endColorstr=#CCCCCC)";
+  background: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), to(#cccccc));
+  background: -moz-linear-gradient(top, #aaaaaa, #cccccc);
+}
+#pagination_link a:hover {
+  background: -moz-linear-gradient(top, #cccccc, #aaaaaa);
+  filter: progid:dximagetransform.microsoft.gradient(startColorStr=#cccccc, endColorStr=#aaaaaa);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCCCCC, endColorstr=#AAAAAA)";
+  background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#aaaaaa));
+  background: -moz-linear-gradient(top, #cccccc, #aaaaaa);
+}
+#pagination_link a.next_prev_page {
+  color: #666;
+  width: 60px;
+  background: none;
+  filter: progid:dximagetransform.microsoft.gradient(startColorStr=#ffffff, endColorStr=#ffffff);
+  border: none;
+}
+#pagination_link a.next_prev_page:hover {
+  color: #000;
+}
+/*HIGHLIGHT BOX TIPICALLY ON RIGHT-ASIDE*/
+.page_highlight {
+  background-color: #F2F2F2;
+  border: 1px solid #D8D8D8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 0 15px 0;
+  font-size: 11px;
+  float: left;
+}
+.page_highlight h4 {
+  color: #363636;
+  border-bottom: 1px solid #D8D8D8;
+  padding: 5px 10px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.page_highlight p {
+  padding: 10px;
+  margin: 0;
+  line-height: 13px;
+  color: #607890;
+}
+.page_highlight ul {
+  padding: 0 10px;
+  margin: 0;
+}
+.page_highlight li {
+  padding: 5px 0;
+  list-style-type: none;
+  border-bottom: 1px dotted #D8D8D8;
+}
+.page_highlight li a {
+  text-decoration: none;
+}
+.page_highlight .date {
+  color: #1C74B5;
+  padding-right: 5px;
+}
+.highlight_item {
+  padding: 8px 10px;
+  overflow: auto;
+}
+.highlight_item img {
+  width: 80px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.item_descriptor {
+  /*font-family: Helvetica,Arial,"MS Trebuchet",sans-serif;
+font-size: 10px;
+padding: 0 0 5px 0;
+color: #636363;
+line-height: 1.4;*/
+
+}
+.item_title {
+  /*font-family: Helvetica,Arial,"MS Trebuchet",sans-serif;
+font-size: 12px;
+color: #000;
+text-decoration: none;*/
+
+}
+/*SOCIAL NETWORK LINKS*/
+#NewsFront #social_network_links, #news_index #social_network_links {
+  margin: 0 0 10px 0;
+  float: left;
+}
+#NewsFront #social_network_links a, #news_index #social_network_links a {
+  margin: 0 10px;
+}
+#NewsFront #social_network_links p, #news_index #social_network_links p {
+  text-align: center;
+  font-size: 12px;
+}
+/*NEWS_INDEX END*/
