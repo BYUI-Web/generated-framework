@@ -1,0 +1,113 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Brigham Young University - Idaho</title>
+	<meta name="description" content="Brigham Young University - Idaho">
+    <meta name="author" content="Brigham Young University - Idaho">
+
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<!-- favicon section for all device types -->
+	<!-- For iPhone 4 with high-resolution Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+	<!-- For first-generation iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+	<link rel="icon" href="favicon.ico" />
+    
+    <!-- Blueprint and Regressive/Progressive Adaptive scripts for older/cross-browser compliance -->
+	<link rel="stylesheet" href="/css/print.css" type="text/css" media="print"> 
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection">
+	<![endif]-->
+
+	<!-- Global Stylesheet -->
+	<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection">
+
+	<!-- Modernizr script, for js and feature detection -->
+	<script src="/js/libs/modernizr-2.0.6.min.js"></script>
+	
+	<!-- jQuery -->
+	<script id="jQueryLoad" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+</head>
+
+<body id="{{ page.page-type }}"><!-- Body tag must have page template name in it to inherit template-specific css rules -->
+
+	<div class="global_outside top_header">
+		<div id='extra_nav_wrapper' class='container'>
+			<div id='extra_nav_img'>
+				<a href='http://ingeniuxstaging.byui.edu/beta/125-years/' title='125 Years'>
+					<img src='/images/head/flag2.png' alt='125 Years'/>
+				</a>
+			</div>
+		</div>
+		<div id="top_header" class="container">
+			<nav id="main_nav" class="span-17">
+				<ul>
+					<li class="first"><a href="http://www.byui.edu/?cid=hli:114">Home</a></li>
+					<li><a href="http://www.byui.edu/about/?cid=hli:115">About BYUI</a></li>
+					<li><a href="http://www.byui.edu/about/academics/?cid=hli:116">Academics</a></li>
+					<li><a href="http://www.byui.edu/about/student-life/?cid=hli:117">Student Life</a></li>
+					<li class="last"><a href="http://www.byui.edu/contact-us/?cid=hli:118">Contact BYUI</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div><!-- end global_outside top -->
+
+	<header class="global_outside main_header">
+		<div id="main_header" class="container">
+			<div class="span-2">
+				<a href="http://www.byui.edu/?cid=hli:112"><img src="/images/head/byuilogo.png" alt="Brigham Young University Logo" height="41" width="70" /></a>
+			</div>
+			<div class="span-9">
+				<h1 id="university_name"><a href="http://www.byui.edu/?cid=hli:113">Brigham Young University - Idaho</a></h1>
+			</div>
+			<nav id="audience_nav_box" class="span-13 last">
+				<ul>
+					<li class="first"><a href="http://www.byui.edu/students/?cid=hli:101">Students</a></li>
+					<li><a href="http://www.byui.edu/future-students/?cid=hli:102">Future Students</a></li>
+					<li><a href="http://www.byui.edu/parents/?cid=hli:103">Parents</a></li>
+					<li><a href="http://www.byui.edu/employees/?cid=hli:104">Employees</a></li>
+					<li><a href="http://www.byui.edu/alumni/?cid=hli:105">Alumni</a></li>
+					<li class="last"><a href="http://www.byui.edu/visitors/?cid=hli:106">Visitors</a></li>	
+				</ul>
+			</nav>
+			<div id="search_box" class="span-7 last">
+				<nav>
+					<ul>
+						<li class="first"><a href="http://www.byui.edu/directories/?cid=hli:108">Directories</a></li>
+						<li><a href="http://www.byui.edu/ask/live-chat/?cid=hli:109" target="_blank"><span class="italics">Ask</span> <strong>BYUI</strong></a></li>
+						<li><a href="http://m.byui.edu/?cid=hli:110">Mobile Tools</a></li>
+						<li class="last"><a href="https://web.byui.edu/services/login?RedirectURL=https://my.byui.edu/?cid=hli:111"><span class="italics">my</span><strong>BYUI</strong></a></li>
+					</ul>
+				</nav>
+				<div id="search_wrapper">
+					<form method="get" action="http://search.byui.edu/search?">
+						<input type="text" class="search_box" name="q"/>
+						<input type="image" src="images/head/blankimg.png" class="search_box_submit"/>
+						<input type="hidden" name="site" value="default_collection"/>
+						<input type="hidden" name="client" value="beta_frontend"/>
+						<input type="hidden" name="output" value="xml_no_dtd"/>
+						<input type="hidden" name="proxystylesheet" value="beta_frontend"/>
+						<input type="hidden" name="proxyreload" value="0"/>
+					</form>
+				</div>
+			</div><!-- end search_box -->
+			
+		</div><!-- end main_header container -->
+	</header><!-- end global_outside main_header -->
+	
+	<div class="global_outside page_content">	
+		<section id="page_content" class="container">
+
+			
