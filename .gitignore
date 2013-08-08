@@ -1,5 +1,14 @@
-
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-css/css-deleteme/*css/css-deleteme/*
-_site/*
+# Folders #
+######################
+css/css-deleteme/*
+_site/css/LESS/*

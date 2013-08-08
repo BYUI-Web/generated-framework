@@ -1,4 +1,4 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-exclude: ['deprecated', 'documentation', 'css/LESS']exclude: ['deprecated', 'documentation', 'LESS']exclude: ['deprecated', 'documentation', 'LESS']exclude: ['deprecated', 'documentation', 'LESS']
+exclude: ['deprecated', 'documentation', 'LESS']
