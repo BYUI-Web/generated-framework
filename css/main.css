@@ -154,7 +154,7 @@ body {
   font-size: 75%;
   color: #222;
   background: #fff;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1,
 h2,
@@ -2236,13 +2236,14 @@ h2.box_header {
 .slideout_img {
   float: left;
   width: 37px;
+  cursor: pointer;
 }
 .slideout_img img {
   outline: 0;
   border: none;
 }
 .slideout_conversation {
-  margin: 7px 5px;
+  margin: 7px 7px 0;
 }
 .slideout_img hr {
   margin: 0;
