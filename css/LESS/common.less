@@ -407,7 +407,6 @@ h2.box_header {
 /******** FEEDBACK BOX	********/
 #slideout {
 	position: fixed;
-	z-index:999999;
 	top: 200px;
 	width: 490px;
 	right: -453px;
@@ -420,11 +419,31 @@ h2.box_header {
 	-webkit-border-radius: 5px 0 0 5px;
 	-moz-border-radius: 5px 0 0 5px;
 	border-radius: 5px 0 0 5px;
+	z-index:999999;
+	outline: none;
+	border:white solid thin;
 }
-#slideout > img
-{
+.slideout_img {
 	float: left;
-	margin: 12px 0;
+	width: 37px;
+}
+.slideout_img img {
+	outline: 0;
+	border: none;
+}
+.slideout_conversation {
+	margin: 7px 5px;
+}
+.slideout_img hr
+{
+	margin: 0;
+	background-color: white;
+	border: none;
+	height: 1px;
+}
+.slideout_feedback
+{
+	margin: 10px;
 }
 #slideout_inner {
 	overflow: hidden;
@@ -464,9 +483,8 @@ h2.box_header {
     list-style: none;
     padding-left: 17px;
 }
-#feedback-button a, #feedback-button a:visited{
+#feedback-button a, a:visited{
     text-decoration:none;
-    color: black;
 }
 #slide-header{
     margin-top:13px;
@@ -483,7 +501,7 @@ h2.box_header {
 }
 #slideout2 {
 	display: none;
-	z-index:999999;
+	z-index: 999999;
 }
 noindex:-o-prefocus, #slideout2 {
 	display: block;
