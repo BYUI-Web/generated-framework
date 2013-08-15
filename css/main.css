@@ -1887,12 +1887,8 @@ input.local_search_button:hover {
 }
 /******** ACCORDION NAVIGATION ********/
 #accordion_control {
-  background-image: url("../images/leftNav/accordion_control_3x18.jpg");
-  /*height: 39px;*/
-
+  background: #555;
   height: 16px;
-  /* Jakob - 02.14.2012 */
-
   padding: 3px 0 0 0;
 }
 .collapse,
