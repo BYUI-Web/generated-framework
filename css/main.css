@@ -154,7 +154,7 @@ body {
   font-size: 75%;
   color: #222;
   background: #fff;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1,
 h2,
@@ -1887,12 +1887,8 @@ input.local_search_button:hover {
 }
 /******** ACCORDION NAVIGATION ********/
 #accordion_control {
-  background-image: url("../images/leftNav/accordion_control_3x18.jpg");
-  /*height: 39px;*/
-
+  background: #555;
   height: 16px;
-  /* Jakob - 02.14.2012 */
-
   padding: 3px 0 0 0;
 }
 .collapse,
@@ -2217,7 +2213,6 @@ h2.box_header {
 /******** FEEDBACK BOX	********/
 #slideout {
   position: fixed;
-  z-index: 999999;
   top: 200px;
   width: 490px;
   right: -453px;
@@ -2230,10 +2225,30 @@ h2.box_header {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
+  z-index: 999999;
+  outline: none;
+  border: white solid thin;
 }
-#slideout > img {
+.slideout_img {
   float: left;
-  margin: 12px 0;
+  width: 37px;
+  cursor: pointer;
+}
+.slideout_img img {
+  outline: 0;
+  border: none;
+}
+.slideout_conversation {
+  margin: 7px 7px 0;
+}
+.slideout_img hr {
+  margin: 0;
+  background-color: white;
+  border: none;
+  height: 1px;
+}
+.slideout_feedback {
+  margin: 10px;
 }
 #slideout_inner {
   overflow: hidden;
@@ -2277,9 +2292,8 @@ h2.box_header {
   padding-left: 17px;
 }
 #feedback-button a,
-#feedback-button a:visited {
+a:visited {
   text-decoration: none;
-  color: black;
 }
 #slide-header {
   margin-top: 13px;
@@ -3071,7 +3085,7 @@ a.message_title_block {
 }
 .fff .scrollbar-pane {
   margin-right: 12px;
-  width: 215px;
+  width: 208px;
 }
 .fff .scrollbar-handle-container {
   background: #EEE;
@@ -3103,7 +3117,7 @@ a.message_title_block {
 .fb-wall {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   font-size: 13px;
-  width: 196px;
+  width: 186px;
   line-height: 1.2em;
   color: #333333;
   padding: 10px;
@@ -5345,6 +5359,7 @@ a.message_title_block {
   position: absolute;
   right: 5px;
   top: 3px;
+  opacity: 0.4;
   -webkit-transition: opacity 0.7s ease-in-out;
   -moz-transition: opacity 0.7s ease-in-out;
   -ms-transition: opacity 0.7s ease-in-out;
@@ -5359,6 +5374,7 @@ a.message_title_block {
 }
 #GeneralAudiencePage #left_aside .link_box .box_header:hover .link_expansion_arrow,
 #GeneralAudiencePage #local_nav .link_box .box_header:hover .link_expansion_arrow {
+  opacity: 1.0;
   text-decoration: none;
 }
 #GeneralAudiencePage #left_aside .link_box .box_header.box_header_new_student,
