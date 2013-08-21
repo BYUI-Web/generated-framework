@@ -3294,12 +3294,14 @@ a.message_title_block {
   position: relative;
   display: block;
   clear: both;
+  background-color: #111;
+  margin-bottom: 1em;
 }
 #cycle {
   position: relative;
   width: 300px;
   height: 300px;
-  border: 1px solid #999;
+  background: #333;
 }
 #cycle_control {
   position: absolute;
@@ -3328,21 +3330,30 @@ a.message_title_block {
 #cycle_nav {
   min-height: 20px;
   margin-bottom: 2px;
+  display: block;
+  zoom: 1;
+}
+#cycle_nav:before,
+#cycle_nav:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+#cycle_nav:after {
+  clear: both;
 }
 #cycle_nav a {
-  background: url("../images/interface/cycle/page_bullets_32x16.png") no-repeat;
-  background-position: -16px 0px;
   display: block;
   float: left;
-  height: 14px;
-  width: 14px;
-  margin: 4px;
   padding: 0;
-  text-indent: -9999px;
+  color: #999;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 #cycle_nav a.activeSlide {
-  background: url("../images/interface/cycle/page_bullets_32x16.png") no-repeat;
-  background-position: 0px 0px;
+  color: #fff;
 }
 #cycle_nav a:focus {
   outline: none;
