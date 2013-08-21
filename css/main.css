@@ -3529,7 +3529,7 @@ a.message_title_block {
   padding: 0;
   font-size: 11pt;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-collapse: separate;
   border-spacing: 0;
   /*tbody tr:nth-child(1) td,
@@ -3552,7 +3552,7 @@ a.message_title_block {
 .type table td {
   border: none;
   border-left: 1px solid #ddd;
-  color: #939ba1;
+  color: #303538;
 }
 .type table td:nth-of-type(1) {
   border-left: none;
@@ -3575,14 +3575,14 @@ a.message_title_block {
 }
 .type table tbody tr:nth-child(even) td,
 .type table tbody tr.even td {
-  background: none repeat scroll 0 0 #F9F9F9;
+  background: none repeat scroll 0 0 #eee;
 }
 .type table tbody tr:nth-child(odd) td,
 .type table tbody tr.odd td {
   background: none repeat scroll 0 0 #FFFFFF;
 }
 .type table tbody tr:hover td {
-  background: none repeat scroll 0 0 #F1F1F1;
+  background: none repeat scroll 0 0 #ccc;
 }
 .type table:nth-child(1) td {
   /*padding-top: 9px;
