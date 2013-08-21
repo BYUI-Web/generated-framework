@@ -15,6 +15,7 @@ page-type: Content
     .buildings-map-block {
         border: 1px solid #555;
         position: relative;
+        margin-bottom: 1em;
     }
     .buildings-map-thumb {
         display: block;
@@ -36,6 +37,39 @@ page-type: Content
     .buildings-map-block:hover .buildings-map-link {
         opacity: 1;
     }
+    .buildings-info {
+        border: 2px solid #ccc;
+        padding: .5em 1em;
+        font-size: .8em;
+    }
+    .buildings-info h2 {
+        color: #326BA9;
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .buildings-info p {
+        margin-bottom: 1em;
+    }
+    .buildings-info ul {
+        padding-left: 1em;
+        list-style: none;
+    }
+    .buildings-info ul a{
+        color: #555;
+        text-decoration: underline;
+    }
+    .buildings-info ul a:hover {
+        color: #326BA9;
+    }
+    .buildings-interesting {
+        border: 1px solid #326BA9;
+        padding: .8em 1em;
+        padding-bottom: 0;
+    }
+    .buildings-interesting h3 {
+        color: #326BA9;
+    }
     </style>
 
         <div id="cycle_gallery" class=""> 
@@ -52,10 +86,16 @@ page-type: Content
                 <img src="/images/placeholders/buildings/benson2.jpg" alt="">
                 <img src="/images/placeholders/buildings/benson3.jpg" alt="">
                 <img src="/images/placeholders/buildings/benson4.jpg" alt="">
-                <img src="/images/placeholders/buildings/benson5.jpg" alt="">
             </div>
         </div><!-- end of cycle gallery -->
         <p><strong>Named for the <a href="http://www.lds.org/churchhistory/presidents/controllers/potcController.jsp?topic=facts&leader=13">thirteenth president of the Church</a>,</strong> who also served as the U.S. Secretary of Agriculture under President Dwight D. Eisenhower</p>
+        <div class="buildings-interesting">
+            <h3>Interesting Facts</h3>
+            <ul>
+                <li>The Horticulture department maintains five greenhouses for experimentation and decoration in buildings and on the grounds of campus. A cadaver lab is also available for the Anatomy &amp; Physiology classes.</li>
+                <li>Ground broken Sept. 27, 1977 by Jeffrey R Holland, Church commissioner of education</li>
+            </ul>
+        </div>
     
 
     </section><!-- END TOP_CONTENT  -->
@@ -64,6 +104,23 @@ page-type: Content
             <div class="buildings-map-block">
                 <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps"><img src="/images/placeholders/buildings/benson-map.jpg" alt="" class="buildings-map-thumb"></a>
                 <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps" class="buildings-map-link"><span aria-hidden="true" class="icon-location"> </span>View Map</a>
+            </div>
+            <div class="buildings-info">
+                <h2>Hours</h2>
+                <p>Monday - Saturday<br>
+                6:00 a.m. - 11:30 p.m.</p>
+                <h2>Departments</h2>
+                <ul>
+                    <li><a href="">Department of Biology</a></li>
+                    <li><a href="">Department of Horticulture</a></li>
+                </ul>
+                <h2>Services</h2>
+                <ul>
+                    <li>Laboratories</li>
+                    <li>Greenhouses</li>
+                    <li>Horticulture Outlet</li>
+                    <li>Wildlife Museum</li>
+                </ul>
             </div>
         </aside>
 
