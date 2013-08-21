@@ -24,15 +24,25 @@ page-type: Content
         background-color: #65ab6f;
         color: #fff !important;
         float: right;
-        padding: .5em 1em;
+        padding: .2em .5em;
         position: absolute;
         right:0;
         bottom:0;
+        opacity: .9;
+    }
+    .buildings-map-block:hover .buildings-map-thumb {
+        opacity: .9;
+    }
+    .buildings-map-block:hover .buildings-map-link {
+        opacity: 1;
     }
     </style>
 
         <div id="cycle_gallery" class=""> 
-            <div id="cycle_nav"></div><!-- this is a pagenation navigation -->
+            <div class="cycle_top clearfix">
+                <div id="cycle_nav"></div><!-- this is a pagenation navigation -->
+            </div>
+            
             <div id="cycle_control" >
                 <div id="cycle_next" class="span-2 last right"></div>
                 <div id="cycle_prev" class="span-2"></div>
@@ -45,15 +55,15 @@ page-type: Content
                 <img src="/images/placeholders/buildings/benson5.jpg" alt="">
             </div>
         </div><!-- end of cycle gallery -->
-        <p>Named for the thirteenth president of the Church, who also served as the U.S. Secretary of Agriculture under President Dwight D. Eisenhower</p>
+        <p><strong>Named for the <a href="http://www.lds.org/churchhistory/presidents/controllers/potcController.jsp?topic=facts&leader=13">thirteenth president of the Church</a>,</strong> who also served as the U.S. Secretary of Agriculture under President Dwight D. Eisenhower</p>
     
 
     </section><!-- END TOP_CONTENT  -->
 
     <aside id="right_aside" class="span-6 last">
             <div class="buildings-map-block">
-                <a href="http://www.byui.edu/maps#BEN"><img src="/images/placeholders/buildings/benson-map.jpg" alt="" class="buildings-map-thumb"></a>
-                <a href="http://www.byui.edu/maps#BEN" class="buildings-map-link">View Map</a>
+                <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps"><img src="/images/placeholders/buildings/benson-map.jpg" alt="" class="buildings-map-thumb"></a>
+                <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps" class="buildings-map-link"><span aria-hidden="true" class="icon-location"> </span>View Map</a>
             </div>
         </aside>
 

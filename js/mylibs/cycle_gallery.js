@@ -47,7 +47,7 @@ $(window).load(function() {
 
 	var nav_width = 0;
 	var left_padding = 0;
-	var page_nav = count * 22;
+	var page_nav = count * 36;
 	if(page_nav > width){
 		nav_width = width
 	} else {
