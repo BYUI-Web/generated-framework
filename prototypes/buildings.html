@@ -92,7 +92,21 @@ page-type: Content
 
     <aside id="right_aside" class="span-6 last">
             <div class="buildings-map-block">
-                <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps"><img src="/images/placeholders/buildings/benson-map.jpg" alt="" class="buildings-map-thumb"></a>
+                <!-- <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps"><img src="/images/placeholders/buildings/benson-map.jpg" alt="" class="buildings-map-thumb"></a> -->
+                <script>
+                var options = {
+                      "element": "map-embed",
+                      "embed" : true,
+                      "centerCoordinates" : [43.81690850175033,-111.7825012029909],
+                      "zoom" : 18,
+                      "mapView" : "map",
+                      "includeMenus" : false,
+                      "icon" : "office",
+                      "name" : "My Office"
+                     };
+                </script>
+                <script src="http://www2.byui.edu/testFolder/maps/Prebuilt/maps/js/newScript.js"></script>
+                <div id="map-embed"></div>
                 <a href="http://www.byui.edu/maps#BEN" title="BYUI Maps" class="buildings-map-link"><span aria-hidden="true" class="icon-location"> </span>View Map</a>
             </div>
             <div class="buildings-info">
