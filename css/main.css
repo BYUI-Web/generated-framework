@@ -1142,6 +1142,9 @@ hr.space {
 /*VARIABLES END*/
 /* MIXINS [contains LESS mixins shortcuts for common css tasks] */
 /*MIXINS BEGIN*/
+.byui-blue {
+  color: #056cb6;
+}
 /* Some naming discrepancies caused our pages to be made using _ and - in the mixin call for box-shadow, so keep both functions the same */
 .hidden {
   display: none !important;
@@ -2080,10 +2083,12 @@ input.local_search_button:hover {
   color: #222;
   display: block;
   margin-right: 0;
+  width: 165px;
 }
 .accordion .lvl_3,
 .accordion .lvl_5 {
   color: #444;
+  width: 165px;
 }
 .accordion .lvl_2:hover,
 .accordion .lvl_3:hover,
