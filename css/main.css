@@ -1142,6 +1142,9 @@ hr.space {
 /*VARIABLES END*/
 /* MIXINS [contains LESS mixins shortcuts for common css tasks] */
 /*MIXINS BEGIN*/
+.byui-blue {
+  color: #056cb6;
+}
 /* Some naming discrepancies caused our pages to be made using _ and - in the mixin call for box-shadow, so keep both functions the same */
 .hidden {
   display: none !important;
@@ -1790,6 +1793,88 @@ nav li {
 /******** END FOOTER ********/
 /**************** END GLOBAL CSS RULES [HEADER/FOOTER] ******************/
 /*GLOBAL END*/
+/* ICON FONTS */
+@font-face {
+  font-family: 'icomoon';
+  src: url('/css/icomoon/fonts/icomoon.eot');
+  src: url('/css/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/css/icomoon/fonts/icomoon.woff') format('woff'), url('/css/icomoon/fonts/icomoon.ttf') format('truetype'), url('/css/icomoon/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-list,
+.icon-location,
+.icon-search,
+.icon-popup,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-arrow-left-2,
+.icon-arrow-right-2,
+.icon-checkmark,
+.icon-cross,
+.icon-quotes-left,
+.icon-cd {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-list:before {
+  content: "\e004";
+}
+.icon-location:before {
+  content: "\e000";
+}
+.icon-search:before {
+  content: "\e003";
+}
+.icon-popup:before {
+  content: "\e005";
+}
+.icon-arrow-left:before {
+  content: "\e006";
+}
+.icon-arrow-right:before {
+  content: "\e007";
+}
+.icon-arrow-left-2:before {
+  content: "\e001";
+}
+.icon-arrow-right-2:before {
+  content: "\e002";
+}
+.icon-checkmark:before {
+  content: "\e009";
+}
+.icon-cross:before {
+  content: "\e00a";
+}
+.icon-quotes-left:before {
+  content: "\e008";
+}
+.icon-cd:before {
+  content: "\e00b";
+}
 /* COMMON [contains all css elements that are common among many or most pagetypes] */
 /*COMMON BEGIN*/
 /**************** START COMMON ELEMENTS ***********************/
@@ -1998,10 +2083,12 @@ input.local_search_button:hover {
   color: #222;
   display: block;
   margin-right: 0;
+  width: 165px;
 }
 .accordion .lvl_3,
 .accordion .lvl_5 {
   color: #444;
+  width: 165px;
 }
 .accordion .lvl_2:hover,
 .accordion .lvl_3:hover,
@@ -3294,12 +3381,14 @@ a.message_title_block {
   position: relative;
   display: block;
   clear: both;
+  background-color: #111;
+  margin-bottom: 1em;
 }
 #cycle {
   position: relative;
   width: 300px;
   height: 300px;
-  border: 1px solid #999;
+  background: #333;
 }
 #cycle_control {
   position: absolute;
@@ -3328,21 +3417,31 @@ a.message_title_block {
 #cycle_nav {
   min-height: 20px;
   margin-bottom: 2px;
+  padding-left: 4px;
+  display: block;
+  zoom: 1;
+}
+#cycle_nav:before,
+#cycle_nav:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+#cycle_nav:after {
+  clear: both;
 }
 #cycle_nav a {
-  background: url("../images/interface/cycle/page_bullets_32x16.png") no-repeat;
-  background-position: -16px 0px;
   display: block;
   float: left;
-  height: 14px;
-  width: 14px;
-  margin: 4px;
   padding: 0;
-  text-indent: -9999px;
+  color: #999;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 #cycle_nav a.activeSlide {
-  background: url("../images/interface/cycle/page_bullets_32x16.png") no-repeat;
-  background-position: 0px 0px;
+  color: #fff;
 }
 #cycle_nav a:focus {
   outline: none;
