@@ -1,10 +1,8 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 
@@ -42,70 +40,77 @@
 </head>
 
 <body id="{{ page.page-type }}"><!-- Body tag must have page template name in it to inherit template-specific css rules -->
+  <a href="" id="top"></a>
 
-	<div class="global_outside top_header">
-		<div id='extra_nav_wrapper' class='container'>
-			<div id='extra_nav_img'>
-				<a href='http://ingeniuxstaging.byui.edu/beta/125-years/' title='125 Years'>
-					<img src='/images/flag2.png' alt='125 Years'/>
-				</a>
+	<header class="site-header">
+		<nav class="site-navigation">
+			<ul>
+				<li class="site-navigation-toggle">
+          <a href="#Administrative">Administrative</a>
+            <ul id="Administrative" class="site-navigation-dropdown"><a href="#top" class="close-that-nav">×</a>
+              <li><a href="#">About BYU-Idaho</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Ecclesiastical Endorsement</a></li>
+              <li><a href="#">Financial Aid</a></li>
+              <li><a href="#">Honor Code</a></li>
+              <li><a href="#">Human Resources</a></li>
+              <li><a href="#">President's Office</a></li>
+              <li><a href="#">Registrar</a></li>
+            </ul>
+        </li>
+				<li class="site-navigation-toggle">
+          <a href="#Academic">Academic</a>
+          <ul id="Academic" class="site-navigation-dropdown"><a href="#top" class="close-that-nav">×</a>
+            <li><a href="#">Academic Advising</a></li>
+            <li><a href="#">Colleges and Departments</a></li>
+            <li><a href="#">Continuing Education</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Pathways</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Student Support</a></li>
+          </ul></li>
+				<li class="site-navigation-toggle">
+          <a href="#StudentLife">Student Life</a>
+          <ul id="StudentLife" class="site-navigation-dropdown"><a href="#top" class="close-that-nav">×</a>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Health and Wellness</a></li>
+            <li><a href="#">Housing</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Gym</a></li>
+            <li><a href="#">Local Information</a></li>
+            <li><a href="#">Student Ambassadors</a></li>
+            <li><a href="#">Travel</a></li>
+          </ul></li>
+				<li class="site-navigation-toggle">
+          <a href="#CampusServices">Campus Services</a>
+          <ul id="CampusServices" class="site-navigation-dropdown"><a href="#top" class="close-that-nav">×</a>
+            <li><a href="#">Associations and Societies</a></li>
+            <li><a href="#">Bookstore</a></li>
+            <li><a href="#">Campus Map</a></li>
+            <li><a href="#">Help Desk</a></li>
+            <li><a href="#">Parking and Security</a></li>
+          </ul></li>
+			</ul>
+			<div class="site-search">
+				<form method="get" action="http://search.byui.edu/search?">
+					<input type="text" class="search_box" name="q"/>
+					<input type="image" src="/images/blankimg.png" class="search_box_submit"/>
+					<input type="hidden" name="site" value="default_collection"/>
+					<input type="hidden" name="client" value="beta_frontend"/>
+					<input type="hidden" name="output" value="xml_no_dtd"/>
+					<input type="hidden" name="proxystylesheet" value="beta_frontend"/>
+					<input type="hidden" name="proxyreload" value="0"/>
+				</form>
 			</div>
-		</div>
-		<div id="top_header" class="container">
-			<nav id="main_nav" class="span-17">
-				<ul>
-					<li class="first"><a href="http://www.byui.edu/?cid=hli:114">Home</a></li>
-					<li><a href="http://www.byui.edu/about/?cid=hli:115">About BYUI</a></li>
-					<li><a href="http://www.byui.edu/about/academics/?cid=hli:116">Academics</a></li>
-					<li><a href="http://www.byui.edu/about/student-life/?cid=hli:117">Student Life</a></li>
-					<li class="last"><a href="http://www.byui.edu/contact-us/?cid=hli:118">Contact BYUI</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div><!-- end global_outside top -->
-
-	<header class="global_outside main_header">
-		<div id="main_header" class="container">
-			<div class="span-2">
-				<a href="http://www.byui.edu/?cid=hli:112"><img src="/images/byuilogo.png" alt="Brigham Young University Logo" height="41" width="70" /></a>
-			</div>
-			<div class="span-9">
-				<h1 id="university_name"><a href="http://www.byui.edu/?cid=hli:113">Brigham Young University - Idaho</a></h1>
-			</div>
-			<nav id="audience_nav_box" class="span-13 last">
-				<ul>
-					<li class="first"><a href="http://www.byui.edu/students/?cid=hli:101">Students</a></li>
-					<li><a href="http://www.byui.edu/future-students/?cid=hli:102">Future Students</a></li>
-					<li><a href="http://www.byui.edu/parents/?cid=hli:103">Parents</a></li>
-					<li><a href="http://www.byui.edu/employees/?cid=hli:104">Employees</a></li>
-					<li><a href="http://www.byui.edu/alumni/?cid=hli:105">Alumni</a></li>
-					<li class="last"><a href="http://www.byui.edu/visitors/?cid=hli:106">Visitors</a></li>	
-				</ul>
-			</nav>
-			<div id="search_box" class="span-7 last">
-				<nav>
-					<ul>
-						<li class="first"><a href="http://www.byui.edu/directories/?cid=hli:108">Directories</a></li>
-						<li><a href="http://www.byui.edu/ask/live-chat/?cid=hli:109" target="_blank"><span class="italics">Ask</span> <strong>BYUI</strong></a></li>
-						<li><a href="http://m.byui.edu/?cid=hli:110">Mobile Tools</a></li>
-						<li class="last"><a href="https://web.byui.edu/services/login?RedirectURL=https://my.byui.edu/?cid=hli:111"><span class="italics">my</span><strong>BYUI</strong></a></li>
-					</ul>
-				</nav>
-				<div id="search_wrapper">
-					<form method="get" action="http://search.byui.edu/search?">
-						<input type="text" class="search_box" name="q"/>
-						<input type="image" src="/images/blankimg.png" class="search_box_submit"/>
-						<input type="hidden" name="site" value="default_collection"/>
-						<input type="hidden" name="client" value="beta_frontend"/>
-						<input type="hidden" name="output" value="xml_no_dtd"/>
-						<input type="hidden" name="proxystylesheet" value="beta_frontend"/>
-						<input type="hidden" name="proxyreload" value="0"/>
-					</form>
-				</div>
-			</div><!-- end search_box -->
 			
-		</div><!-- end main_header container -->
-	</header><!-- end global_outside main_header -->
+		</nav>
+		<h1 class="site-title">Brigham Young University - Idaho</h1>
+		<nav class="audience-navigation">
+			
+		</nav>
+		
+
+	</header><!-- end site_header -->
 	
 	<div class="global_outside page_content">	
 		<section id="page_content" class="container">
