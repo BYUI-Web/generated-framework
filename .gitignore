@@ -10,6 +10,8 @@ Thumbs.db
 
 # Folders #
 ######################
+css/
+css/*
 css/css-deleteme/*
 _site/css/LESS/*
 _site/*
