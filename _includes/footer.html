@@ -261,9 +261,10 @@ if (Math.random() < q_viewrate / 100){var q_popup_f = function(){var q_script = 
 <!--END QUALTRICS POPUP-->
 
 <!-- University web alaytics code for all university pages. -->
+<!-- s_code should be first because if not then the omniture_code.js will throw an error because the s variable hasn't been created yet -->
+	<script type="text/javascript" src="http://web.byui.edu/Omniture/s_code.js"></script>
 	<script type="text/javascript" src="http://web.byui.edu/Omniture/omniture_code.js"></script>
 	<img name="s_i_byuibyuiedu" height="1" width="1" border="0" style="position:absolute;top:0px;left:0px;" alt="" src="http://byuidaho.112.2O7.net/b/ss/byuibyuiedu/1/H.8-pdvu-2/s81115526936482?[AQB]&amp;ndh=1&amp;t=27/5/2013%208%3A56%3A14%204%20360&amp;ns=byuidaho&amp;g=http%3A//www.byui.edu/&amp;cc=USD&amp;s=1920x1080&amp;c=24&amp;j=1.3&amp;v=Y&amp;k=Y&amp;bw=1181&amp;bh=946&amp;p=Shockwave%20Flash%3BChrome%20Remote%20Desktop%20Viewer%3BNative%20Client%3BChrome%20PDF%20Viewer%3BWebEx64%20General%20Plugin%20Container%3BAdobeExManDetect%3BFlip4Mac%20Windows%20Media%20Plugin%3BGoogle%20Talk%20Plugin%3BiPhotoPhotocast%3BLogMeIn%20Plugin%201.0.0.730%3BLync%20Meeting%20Join%20Plug-in%3BGoogle%20Talk%20Plugin%20Video%20Accelerator%3BGoogle%20Talk%20Plugin%20Video%20Renderer%3BQuickTime%20Plug-in%207.7.1%3BSharePoint%20Browser%20Plug-in%3BSilverlight%20Plug-In%3B&amp;[AQE]">
-<script type="text/javascript" src="http://web.byui.edu/Omniture/s_code.js"></script>
 
 <!-- LivePerson Chat code for syncing operator with user's web page. Should be on pages that use livechat (everywhere). -->
 <script language="javascript">
