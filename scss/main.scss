@@ -1,94 +1,5 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+$byui-blue: #326ba9;
 
 /* ==========================================================================
    Author's custom styles
@@ -114,20 +25,39 @@ textarea {
 // http://css-tricks.com/sass-style-guide/
 
 @import "main/_normalize.scss";
+@import "main/_icon_fonts.scss";
 
 body {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, Verdana, sans-serif;
 }
 
-.site-title {
+
+/* HEADER STUFF */
+.site-header {
+  background: $byui-blue;
+  overflow: hidden;
+}
+.site-title a {
+  display: block;
   background: url(../images/byuilogo.png) no-repeat;
   width: 70px;
   height: 41px;
   text-indent: -9999px;
   margin-left: .5em;
 }
-
+.mobile-nav-toggle {
+  font-size: 3em;
+  position: absolute;
+  top: .1em;
+  right: .1em;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    color: #fff;
+  }
+}
 .site-navigation {
+  position: relative;
   overflow: hidden;
   background: #222;
   ul {
@@ -146,31 +76,94 @@ body {
 
     }
     &.close-that-nav {
-      position: absolute;
       right: 1em;
       top: .5em;
       background: #333;
       width: auto;
+      padding: .1em .8em;
+    }
+  }
+  .button {
+    margin: 0 .5em;
+    padding: .5em 1em;
+    background: lighten($byui-blue, 20%);
+    border-radius: 2em;
+    color: #fff;
+    width: auto;
+    text-align: center;
+    &:hover {
+      background: lighten($byui-blue, 10%);
     }
   }
 }
+.no-js {
+  .site-navigation-dropdown {
+    display: none;
+  }
+  .site-navigation-toggle {
+    &:target .site-navigation-dropdown {
+      display:block;
+    }
+  }
+}
+.site-navigation-toggle {
+  position: relative;
+}
 
 .site-navigation-dropdown {
+  overflow: hidden;
   position: relative;
-  display: none;
   background: #555;
-  &:target {
-    display: block;
-  }
+}
+.site-search {
+  width: 100%;
+  position: relative;
+  padding: .5em;
+}
+.search-box {
+  padding: .5em;
+  border: none;
+  border-radius: 2em;
+  width: 100%;
+  box-sizing: border-box;
+}
+.search-button {
+  border: none;
+  background: #222;
+  color: #eee;
+  position: absolute;
+  top: .8em;
+  right: .9em;
+  border-radius: 2em;
+  padding: .25em .25em .1em;
+}
+
+.breadcrumbs {
+  margin: .5em;
+  padding: .5em;
+  background: #eee;
+}
+
+
+#slideout, #slideout2 {
+  // temporary
+  display: none;
 }
 
 
 
-
-
-
-
-
+/* FOOTER STUFF */
+.site-footer {
+  padding: .5em;
+  background: #000;
+  color: #eee;
+  a {
+    color: #ccc;
+    &:hover {
+      color: #eee;
+    }
+  }
+}
 
 
 /* ==========================================================================
