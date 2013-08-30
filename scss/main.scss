@@ -154,7 +154,7 @@ body {
 
 /* FOOTER STUFF */
 .site-footer {
-  padding: .5em;
+  padding: 1em;
   background: #000;
   color: #eee;
   a {
@@ -163,6 +163,10 @@ body {
       color: #eee;
     }
   }
+}
+.branding a, .social a, .access a {
+  display: block;
+  margin-bottom: .8em;
 }
 
 
