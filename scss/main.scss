@@ -181,8 +181,18 @@ body {
 }
 
 /* LEFT NAV */
+.department-nav {
+  &:target .department-nav-list {
+    display: block;
+  }
+  &:target .department-nav-arrow {
+    display: none;
+  }
+}
 .department-title {
   margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1em;
   a {
     background: $byui-blue;
     color: #fff;
@@ -195,16 +205,29 @@ body {
   background: #333;
   padding: 0;
   margin: 0;
+  display: none;
+
   a {
     display: block;
     color: #fff;
     padding: .5em 1em;
     text-decoration: none;
+    &.close-that-nav {
+      float: right;
+      position: relative;
+      top: -2.4em;
+    }
     &:hover {
       background: #555;
-      
+
     }
   }
+}
+.department-nav-arrow {
+  float: right;
+  font-size: 1.4em;
+  padding-top: .1em;
+  margin-right: -.25em;
 }
 
 
@@ -214,6 +237,7 @@ body {
   background: #000;
   color: #eee;
   border-top: 10px solid #ddd;
+  margin-top: 3em;
   a {
     color: #ccc;
     &:hover {
