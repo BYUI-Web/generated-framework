@@ -28,7 +28,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-list, .icon-location, .icon-search, .icon-popup, .icon-arrow-left, .icon-arrow-right, .icon-arrow-left-2, .icon-arrow-right-2, .icon-checkmark, .icon-cross, .icon-quotes-left, .icon-cd, .icon-byui-logo {
+.icon-list, .icon-location, .icon-search, .icon-popup, .icon-arrow-left, .icon-arrow-right, .icon-arrow-left-2, .icon-arrow-right-2, .icon-checkmark, .icon-cross, .icon-quotes-left, .icon-cd, .icon-byui-logo, .icon-arrow-down, .icon-arrow-up {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -76,4 +76,10 @@ you can use the generic selector below, but it's slower:
 }
 .icon-byui-logo:before {
 	content: "\e00c";
+}
+.icon-arrow-down:before {
+	content: "\e00d";
+}
+.icon-arrow-up:before {
+	content: "\e00e";
 }
