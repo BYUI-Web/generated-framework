@@ -17,10 +17,11 @@ window.onload = function() {
 			'icon-checkmark' : '&#xe009;',
 			'icon-cross' : '&#xe00a;',
 			'icon-quotes-left' : '&#xe008;',
-			'icon-cd' : '&#xe00b;'
+			'icon-cd' : '&#xe00b;',
+			'icon-byui-logo' : '&#xe00c;'
 		},
 		els = document.getElementsByTagName('*'),
-		i, attr, html, c, el;
+		i, attr, c, el;
 	for (i = 0; ; i += 1) {
 		el = els[i];
 		if(!el) {
