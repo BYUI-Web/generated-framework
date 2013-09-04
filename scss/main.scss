@@ -38,13 +38,25 @@ body {
   overflow: hidden;
   margin-bottom: 1em;
 }
+.site-title {
+  margin: 0;
+  padding: 0;
+}
 .site-title a {
   display: block;
-  background: url(../images/byuilogo.png) no-repeat;
-  width: 70px;
-  height: 41px;
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  font-size: 3em;
+  height: 1em;
+  line-height: .9em;
+
+}
+.site-logo-text {
   text-indent: -9999px;
-  margin-left: .5em;
+  height: 0;
+  width: 0;
+  display: block;
 }
 .mobile-nav-toggle {
   font-size: 3em;
