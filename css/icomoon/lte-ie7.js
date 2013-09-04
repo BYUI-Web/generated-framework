@@ -18,7 +18,9 @@ window.onload = function() {
 			'icon-cross' : '&#xe00a;',
 			'icon-quotes-left' : '&#xe008;',
 			'icon-cd' : '&#xe00b;',
-			'icon-byui-logo' : '&#xe00c;'
+			'icon-byui-logo' : '&#xe00c;',
+			'icon-arrow-down' : '&#xe00d;',
+			'icon-arrow-up' : '&#xe00e;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, c, el;
