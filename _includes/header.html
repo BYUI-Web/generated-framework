@@ -44,7 +44,7 @@
       $('.mobile-nav-toggle').show();
       $('.close-that-nav').remove();
       $('.mobile-nav-toggle').click(function(e){
-        $(this).siblings('.site-navigation').slideToggle(1000);
+        $('.site-navigation').slideToggle(1000);
       });
       $('.site-navigation-toggle > a').click(function(e){
         e.preventDefault();
@@ -60,12 +60,18 @@
 
 	<header class="site-header">
 		
-		<h1 class="site-title"><a href="#" title="Home"><span aria-hidden="true" class="icon-byui-logo"></span><span class="site-logo-text">Brigham Young University - Idaho</span></a></h1>
+    <div class="site-header-branding clearfix">
+      <h1 class="site-title"><a href="#" title="Home"><span aria-hidden="true" class="icon-byui-logo"></span><span class="site-logo-text">Brigham Young University - Idaho</span></a></h1>
 
-    <div class="mobile-nav-toggle">
-      <span aria-hidden="true" class="icon-list"></span>
+      <div class="mobile-nav-toggle">
+        <span aria-hidden="true" class="icon-list"></span>
+      </div>
     </div>
+		
 
+    <div class="site-menu">
+      
+    </div>
     <nav class="site-navigation">
       <ul>
         <li id="Administrative" class="site-navigation-toggle">
