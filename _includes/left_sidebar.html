@@ -1,4 +1,12 @@
 <div class="left-column">
+    <script>
+    $(function() {
+        $('.department-title').click(function(e){
+            e.preventDefault();
+            $('.department-nav-list').slideToggle(1000);
+        });
+    });
+  </script>
     <nav id="department-nav" class="department-nav">
         <h2 class="department-title"><a href="#department-nav">Student Housing<span aria-hidden="true" class="department-nav-arrow icon-arrow-down"></span></a></h2>
         <ul class="department-nav-list">

@@ -30,6 +30,9 @@ $byui-blue: #326ba9;
 body {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, Verdana, sans-serif;
 }
+a {
+  color: $byui-blue;
+}
 
 
 /* HEADER STUFF */
@@ -50,6 +53,9 @@ body {
   font-size: 3em;
   height: 1em;
   line-height: .9em;
+  &:hover {
+    color: #333;
+  }
 
 }
 .site-logo-text {
@@ -161,6 +167,9 @@ body {
   right: .9em;
   border-radius: 2em;
   padding: .25em .25em .1em;
+  &:hover {
+    background: #777;
+  }
 }
 
 .breadcrumbs {
@@ -185,8 +194,11 @@ body {
   &:target .department-nav-list {
     display: block;
   }
-  &:target .department-nav-arrow {
-    display: none;
+  &:target .department-title {
+    display: block;
+   .department-nav-arrow {
+      display: none;
+    }
   }
 }
 .department-title {
