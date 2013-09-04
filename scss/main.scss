@@ -166,6 +166,7 @@ body {
 .breadcrumbs {
   padding: .5em .8em;
   background: #eee;
+  font-size: .8em;
 }
 
 
@@ -178,6 +179,34 @@ body {
 .page-content {
   margin: 0 1em;
 }
+
+/* LEFT NAV */
+.department-title {
+  margin-bottom: 0;
+  a {
+    background: $byui-blue;
+    color: #fff;
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+  }
+}
+.department-nav-list {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  a {
+    display: block;
+    color: #fff;
+    padding: .5em 1em;
+    text-decoration: none;
+    &:hover {
+      background: #555;
+      
+    }
+  }
+}
+
 
 /* FOOTER STUFF */
 .site-footer {
