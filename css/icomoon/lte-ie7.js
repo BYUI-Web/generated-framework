@@ -20,7 +20,8 @@ window.onload = function() {
 			'icon-cd' : '&#xe00b;',
 			'icon-byui-logo' : '&#xe00c;',
 			'icon-arrow-down' : '&#xe00d;',
-			'icon-arrow-up' : '&#xe00e;'
+			'icon-arrow-up' : '&#xe00e;',
+			'icon-lds-church' : '&#xe00f;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, c, el;
