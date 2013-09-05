@@ -62,7 +62,7 @@ a {
   }
 
 }
-.site-logo-text {
+.logo-text {
   text-indent: -9999px;
   height: 0;
   width: 0;
@@ -173,7 +173,7 @@ a {
   border-radius: 2em;
   padding: .25em .25em .1em;
   &:hover {
-    background: yellow;
+    background: #999;
   }
 }
 
@@ -255,7 +255,7 @@ a {
 .site-footer {
   padding: 1em;
   background: #000;
-  color: #eee;
+  color: #ccc;
   border-top: 10px solid #ddd;
   margin-top: 3em;
   a {
@@ -268,7 +268,14 @@ a {
 .branding a, .social a, .access a {
   display: block;
   margin-bottom: .8em;
+  &.lds-church-link {
+    text-decoration: none;
+    font-size: 7em;
+    text-align: center;
+    margin: 0;
+  }
 }
+
 
 
 /* ==========================================================================
