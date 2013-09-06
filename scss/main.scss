@@ -45,7 +45,7 @@ a {
 /* HEADER STUFF */
 .site-header {
   background: $byui-blue;
-  overflow: hidden;
+  @include clearfix;
   margin-bottom: 1em;
 }
 .site-title {
@@ -91,13 +91,17 @@ a {
 }
 .site-navigation {
   position: relative;
-  overflow: hidden;
+  @include clearfix;
   background: #222;
+  > ul {
+    @media screen and (min-width:800px) {
+      float: left;
+    }
+  }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    border-bottom: #222 solid .3em;
   }
   a {
     color: #eee;
@@ -125,7 +129,7 @@ a {
 }
 .site-navigation-arrow {
   position: absolute;
-  right: .5em;
+  right: .4em;
   top: .3em;
   font-size: 1.5em;
 }
@@ -142,6 +146,9 @@ a {
 }
 .site-navigation-toggle {
   position: relative;
+  > a {
+    padding-right: 2.5em;
+  }
   @media screen and (min-width: 480px) {
     width: 50%;
     float: left;
@@ -149,12 +156,21 @@ a {
   @media screen and (min-width: 700px) {
     width: 25%;
   }
+  @media screen and (min-width: 800px) {
+    width: auto;
+
+  }
 }
 
 .site-navigation-dropdown {
   overflow: hidden;
   position: relative;
   background: #555;
+  @media screen and (min-width: 800px) {
+    width: 15em;
+    position: absolute;
+    z-index: 1000;
+  }
 }
 .site-search {
   width: 100%;
@@ -250,7 +266,6 @@ a {
     position: relative;
     &:hover {
       color: #111;
-      top: -2px;
     }
   }
 }
