@@ -32,24 +32,24 @@ $(window).load(function() {
 		}
 		control_top = highest / 2 - 5;
 		$('#cycle_control').css('top', control_top);
-		img_left_margin = (width - $(this).width()) / 2;	
+		img_left_margin = (width - $(this).width()) / 2;
 		$(this).css('margin-left', img_left_margin);
 	});
 	$('#cycle_control').css('width', width);
 	
 	$('#cycle').cycle({
-		fx: 		$('#cycle').attr('class'),
-		pause: 		1, 
-		next: 		'#cycle_next',
-		prev: 		'#cycle_prev',
-		pager: 		'#cycle_nav' 
+		fx:	$('#cycle').attr('class'),
+		pause: 1,
+		next: '#cycle_next',
+		prev: '#cycle_prev',
+		pager: '#cycle_nav'
 	});
 
 	var nav_width = 0;
 	var left_padding = 0;
 	var page_nav = count * 36;
 	if(page_nav > width){
-		nav_width = width
+		nav_width = width;
 	} else {
 		nav_width = page_nav;
 		left_padding = ((page_nav - width) / 2) * -1;
