@@ -9,7 +9,7 @@ There are several ways you could go about running a localhost server, and if you
 
 Perhaps the simplest solution is to run a simple HTTP server on the command line. Here's an example of how you could do this using Python:
 
-    $ cd /home/somedir
+    $ cd /to/some/directory/master-framework
     $ python -m SimpleHTTPServer
     
 Point your browser to localhost:8000
