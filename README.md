@@ -5,7 +5,7 @@ This repo contains the pre-generated html and other files for our front-end fram
 
 The framework is built on some absolute file paths, which means you'll need to run a local server at the root directory for the pages to look right in your browser.
 
-There are several ways you could go about running a localhost server: If you've already got Jekyll installed for our master-build framework, simply cd to the build directory, build the site, and then serve it.
+There are several ways you could go about running a localhost server: If you've already got [Jekyll](http://jekyllrb.com/docs/quickstart/) installed for our master-build framework, simply cd to the build directory, build the site, and then serve it.
 
     $ jekyll serve
 
