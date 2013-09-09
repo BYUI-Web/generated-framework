@@ -1,4 +1,4 @@
-master-framework
+Master Framework
 ================
 
 The generated front-end framework for byui.edu
