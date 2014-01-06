@@ -115,3 +115,15 @@
 .searchPage .keymatch_div {
   clear: both;
 }
+
+.searchPage #sidebar-container #recommended_links {
+  padding: 0 10px 10px 13px;
+}
+
+.searchPage #sidebar-container #askbyui {
+  padding: 0 10px 10px 13px;
+}
+
+.searchPage #sidebar-container #recommended_links {
+  padding: 0 10px 10px 13px;
+}
