@@ -127,3 +127,7 @@
 .searchPage #sidebar-container #recommended_links {
   padding: 0 10px 10px 13px;
 }
+
+.searchPage table#keymatch_info td {
+padding-left: 0;
+}
