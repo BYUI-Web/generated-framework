@@ -134,4 +134,8 @@ padding-left: 0;
 
 @media only screen and (max-width: 769px) {
   .searchPage .number {display:none;}  
+  form {
+    max-width: 100%;
+overflow-wrap: break-word;
+  }
 }
