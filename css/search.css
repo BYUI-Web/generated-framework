@@ -136,6 +136,10 @@ padding-left: 0;
     overflow-wrap: break-word;
   }
 
+  .searchPage h2 {
+    font-size: 25px;
+  }
+
 @media only screen and (max-width: 769px) {
   .searchPage .number {display:none;}  
 }
