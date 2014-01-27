@@ -134,9 +134,11 @@
 
 .searchPage .g {
   overflow-wrap: break-word;
+  padding-bottom:30px;
 }
 
 .searchPage h2 {
+  margin-bottom:0px;
   font-size: 25px;
   color:#000000;
 }
