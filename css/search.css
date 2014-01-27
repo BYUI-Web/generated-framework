@@ -35,7 +35,7 @@
   margin-top: 15px;
 }
 .searchPage #result_bar {
-  text-align: center;
+  text-align: left;
 }
 .searchPage #result_bar font {
   font-style: italic;
