@@ -167,7 +167,7 @@
 }
 
 form.desktop-search .search .form-control.ui-autocomplete-input {
-  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
