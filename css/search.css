@@ -158,6 +158,17 @@
 
 }
 
+.searchPage a.keymatch_word {
+  font-weight:bold;
+}
+
+.searchPage table {
+  border: 1px dashed #C5C5C5;
+}
+
 @media only screen and (max-width: 769px) {
   .searchPage .number {display:none;}  
+  .searchPage #search #search_box_top_input, .searchPage #search #search_box_bottom_input {
+    margin-right: 0;
+  }
 }
