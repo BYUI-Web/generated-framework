@@ -166,6 +166,11 @@
   border: 1px dashed #C5C5C5;
 }
 
+.searchPage form.desktop-search .input-group .form-control.ui-autocomplete-input {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
 @media only screen and (max-width: 769px) {
   .searchPage .number {display:none;}  
   .searchPage #search #search_box_top_input, .searchPage #search #search_box_bottom_input {
