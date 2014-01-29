@@ -171,6 +171,11 @@
   border-bottom-left-radius: 4px;
 }
 
+.searchPage .keymatch_div h2 a+strong {
+  font-size: 11px;
+  color: #a9a9a9;
+  font-weight: normal;
+}
 @media only screen and (max-width: 769px) {
   .searchPage .number {display:none;}  
   .searchPage #search #search_box_top_input, .searchPage #search #search_box_bottom_input {
