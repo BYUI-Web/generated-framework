@@ -186,4 +186,13 @@ form.desktop-search .search .form-control.ui-autocomplete-input {
  .searchPage table#keymatch_info td {
 width: 100px;
 } 
+.searchPage .a {
+font-size: 10px;
+}
+.searchPage table#keymatch_info td a {
+font-size: 20px;
+}
+.searchPage h2 {
+  font-size: 19px;
+}
 }
