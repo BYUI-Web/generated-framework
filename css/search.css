@@ -182,3 +182,8 @@ form.desktop-search .search .form-control.ui-autocomplete-input {
     margin-right: 0;
   }
 }
+@media only screen and (max-width: 320px) {
+ .searchPage table#keymatch_info td {
+width: 100px;
+} 
+}
