@@ -2,6 +2,11 @@
   float: left;
   margin-right: 20px;
 }
+
+.searchPage #search-container {
+margin-left: -15px;
+}
+
 .searchPage #top_search_field {
   background-color: #e8edff;
   line-height: 22px;
