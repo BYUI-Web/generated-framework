@@ -157,17 +157,13 @@ margin-left: -15px;
 
 .searchPage table#keymatch_info td a {
   font-family: Helvetica, Arial, sans-serif;
-  font-size:30px;
+  font-size:auto;
   color:#056cb6;
 
 }
 
 .searchPage a.keymatch_word {
   font-weight:bold;
-}
-
-.searchPage table {
-  border: 1px dashed #C5C5C5;
 }
 
 form.desktop-search .search .form-control.ui-autocomplete-input {
