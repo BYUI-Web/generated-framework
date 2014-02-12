@@ -44,7 +44,7 @@
 }
 .searchPage #sidebar-container {
   width: 25%;
-  float: left;
+  float: right;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -54,7 +54,6 @@
   -webkit-border-radius: 4px 4px 0 0;
   -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
-  margin-left: 5%;
   margin-top: -13px;
 }
 .searchPage #sidebar-container p {
