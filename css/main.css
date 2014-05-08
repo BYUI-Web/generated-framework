@@ -483,7 +483,7 @@ form.inline p {
 }
 /* grid.css */
 .container {
-  width: 950px;
+/*  width: 950px;*/
   margin: 0 auto;
   padding: 0;
   max-width: 950px;
@@ -1359,8 +1359,8 @@ button {
 /* GLOBAL [contains all TRULY GLOBAL css for header/footer] */
 .global_outside {
   width: 100%;
-  min-width: 980px;
-}
+/*  min-width: 980px;
+*/}
 .container {
   position: relative;
 }
